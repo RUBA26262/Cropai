@@ -1,0 +1,141 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function isOwner(uid) { return signedIn() && request.auth.uid == uid; }
+    function role(name) { return signedIn() && request.auth.token.role == name && request.auth.token.active == true; }
+    function verifiedExpert() { return role('expert') && request.auth.token.expertVerified == true; }
+    function admin() { return role('admin'); }
+    function onlyChanged(fields) { return request.resource.data.diff(resource.data).affectedKeys().hasOnly(fields); }
+    function validText(value, max) { return value is string && value.size() > 0 && value.size() <= max; }
+
+    match /users/{uid} {
+      allow create: if isOwner(uid)
+        && request.resource.data.keys().hasOnly(['uid','fullName','displayName','phone','email','district','preferredLanguage','language','role','emailVerified','privacyConsent','modelImprovementConsent','modelTrainingConsent','theme','consentVersion','accountStatus','expertVerificationStatus','createdAt','updatedAt'])
+        && request.resource.data.uid == uid
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.emailVerified == request.auth.token.email_verified
+        && (request.resource.data.role == 'farmer' || request.resource.data.role == request.auth.token.role)
+        && request.resource.data.accountStatus == 'active'
+        && request.resource.data.expertVerificationStatus == 'not_requested'
+        && request.resource.data.preferredLanguage in ['en','mr','hi']
+        && request.resource.data.language in ['en','mr','hi']
+        && request.resource.data.theme in ['light','dark','system']
+        && request.resource.data.privacyConsent is bool
+        && request.resource.data.modelImprovementConsent is bool
+        && request.resource.data.modelTrainingConsent is bool
+        && validText(request.resource.data.fullName, 120)
+        && validText(request.resource.data.displayName, 120);
+      allow read: if isOwner(uid) || admin();
+      allow update: if isOwner(uid)
+        && onlyChanged(['fullName','displayName','phone','district','preferredLanguage','language','theme','consentVersion','privacyConsent','modelImprovementConsent','modelTrainingConsent','emailVerified','updatedAt'])
+        && request.resource.data.preferredLanguage in ['en','mr','hi']
+        && request.resource.data.language in ['en','mr','hi']
+        && request.resource.data.theme in ['light','dark','system']
+        && request.resource.data.privacyConsent is bool
+        && request.resource.data.modelImprovementConsent is bool
+        && request.resource.data.modelTrainingConsent is bool
+        && validText(request.resource.data.fullName, 120)
+        && validText(request.resource.data.displayName, 120)
+        && (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['emailVerified'])
+          || (request.resource.data.emailVerified == true && request.auth.token.email_verified == true));
+      allow delete: if false;
+    }
+
+    match /farms/{farmId} {
+      allow create: if signedIn()
+        && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.keys().hasOnly(['ownerUid','name','district','districtCode','taluka','talukaCode','village','villageCode','villageLgdCode','location','latitude','longitude','locationSource','locationHierarchyVerified','locationHierarchySource','areaAcres','soilType','irrigationType','createdAt','updatedAt'])
+        && validText(request.resource.data.name, 120)
+        && validText(request.resource.data.district, 120)
+        && validText(request.resource.data.taluka, 120)
+        && validText(request.resource.data.village, 120)
+        && validText(request.resource.data.districtCode, 80)
+        && validText(request.resource.data.talukaCode, 80)
+        && validText(request.resource.data.villageCode, 80)
+        // Accept farm GPS anywhere in India. Administrative labels and the
+        // point used for weather are intentionally independent: a farmer may
+        // register a remote farm while currently located in another state.
+        && request.resource.data.latitude is number && request.resource.data.latitude >= 6.0 && request.resource.data.latitude <= 38.0
+        && request.resource.data.longitude is number && request.resource.data.longitude >= 68.0 && request.resource.data.longitude <= 98.0
+        && request.resource.data.locationSource == 'device_gps'
+        && request.resource.data.locationHierarchyVerified == false
+        && request.resource.data.locationHierarchySource == 'bundled_official_directory_client';
+      allow read: if isOwner(resource.data.ownerUid) || admin();
+      allow update: if isOwner(resource.data.ownerUid)
+        && request.resource.data.ownerUid == resource.data.ownerUid
+        && onlyChanged(['name','areaAcres','soilType','irrigationType','updatedAt'])
+        && validText(request.resource.data.name, 120)
+        && validText(request.resource.data.district, 120);
+      allow delete: if isOwner(resource.data.ownerUid);
+    }
+
+    match /farmCrops/{cropId} {
+      allow create: if signedIn() && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.keys().hasOnly(['ownerUid','farmId','cropKey','season','sowingDate','growthStage','status','createdAt','updatedAt'])
+        && validText(request.resource.data.cropKey, 80)
+        && (!request.resource.data.keys().hasAny(['growthStage']) || request.resource.data.growthStage in ['unknown','seedling','vegetative','flowering','fruiting','maturity'])
+        && request.resource.data.status == 'active'
+        && get(/databases/$(database)/documents/farms/$(request.resource.data.farmId)).data.ownerUid == request.auth.uid;
+      allow read: if isOwner(resource.data.ownerUid) || admin();
+      allow update: if isOwner(resource.data.ownerUid)
+        && request.resource.data.ownerUid == resource.data.ownerUid
+        && onlyChanged(['season','sowingDate','growthStage','status','updatedAt'])
+        && request.resource.data.status in ['active','harvested','archived'];
+      allow delete: if false;
+    }
+
+    match /scans/{scanId} {
+      allow read: if isOwner(resource.data.ownerUid) || admin()
+        || (verifiedExpert() && exists(/databases/$(database)/documents/expertReviews/$(scanId + '_' + request.auth.uid)));
+      allow create, update, delete: if false;
+    }
+
+    match /expertReviews/{reviewId} {
+      allow read: if isOwner(resource.data.ownerUid)
+        || (verifiedExpert() && resource.data.assignedExpertUid == request.auth.uid)
+        || admin();
+      allow create, update, delete: if false;
+    }
+
+    match /alerts/{alertId} {
+      allow read: if isOwner(resource.data.recipientUid) || admin();
+      allow create, delete: if false;
+      allow update: if isOwner(resource.data.recipientUid)
+        && onlyChanged(['read','readAt'])
+        && request.resource.data.read == true;
+    }
+
+    match /conditionCatalog/{conditionId} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    match /weatherRisk/{riskId} {
+      allow read: if isOwner(resource.data.ownerUid) || admin();
+      allow write: if false;
+    }
+
+    match /outbreakAggregates/{aggregateId} {
+      allow read: if verifiedExpert() || admin();
+      allow write: if false;
+    }
+
+    match /expertVerificationRequests/{uid} {
+      allow read: if isOwner(uid) || admin();
+      allow write: if false;
+    }
+
+    match /pushTokens/{tokenId} {
+      allow read, write: if false;
+    }
+
+    match /auditEvents/{eventId} {
+      allow read: if admin();
+      allow write: if false;
+    }
+
+    match /rateLimits/{document=**} { allow read, write: if false; }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

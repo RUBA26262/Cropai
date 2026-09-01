@@ -1,0 +1,8 @@
+{
+  "cotton": ["cotton_healthy", "cotton_bacterial_blight", "cotton_leaf_curl", "cotton_pink_bollworm", "unknown"],
+  "soybean": ["soybean_healthy", "soybean_rust", "soybean_yellow_mosaic", "soybean_girdle_beetle", "unknown"],
+  "sugarcane": ["sugarcane_healthy", "sugarcane_red_rot", "sugarcane_smut", "sugarcane_early_shoot_borer", "unknown"],
+  "onion": ["onion_healthy", "onion_purple_blotch", "onion_downy_mildew", "onion_thrips", "unknown"],
+  "tomato": ["tomato_healthy", "tomato_early_blight", "tomato_late_blight", "tomato_fruit_borer", "unknown"],
+  "pomegranate": ["pomegranate_healthy", "pomegranate_bacterial_blight", "pomegranate_anthracnose", "pomegranate_fruit_borer", "unknown"]
+}

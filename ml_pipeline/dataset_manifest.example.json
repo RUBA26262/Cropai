@@ -1,0 +1,21 @@
+{
+  "datasetVersion": "replace-me",
+  "generatedAt": "2026-08-31T00:00:00Z",
+  "sources": [
+    {
+      "name": "replace-with-source-name",
+      "url": "https://example.org/dataset",
+      "license": "replace-with-SPDX-or-exact-license",
+      "licenseEvidence": "https://example.org/license",
+      "allowedForTraining": false
+    }
+  ],
+  "recordsFile": "data/records.csv",
+  "recordColumns": ["path", "crop_key", "condition_id", "source", "capture_group", "split", "consent_reference"],
+  "splitPolicy": "capture_group_isolation",
+  "fieldValidation": {
+    "region": "Maharashtra",
+    "consentRequired": true,
+    "usedForTraining": false
+  }
+}

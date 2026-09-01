@@ -1,0 +1,33 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function signedIn() { return request.auth != null; }
+    function owner(uid) { return signedIn() && request.auth.uid == uid; }
+    function validImage() {
+      return request.resource.size > 0
+        && request.resource.size <= 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/(jpeg|png|webp)');
+    }
+    function validSlot(slot) { return slot.matches('(closeup|plant|context)\\.(jpg|jpeg|png|webp)'); }
+
+    match /quarantine/{uid}/{scanId}/{slot} {
+      allow create: if owner(uid) && validSlot(slot) && validImage()
+        && firestore.exists(/databases/(default)/documents/scans/$(scanId))
+        && firestore.get(/databases/(default)/documents/scans/$(scanId)).data.ownerUid == uid
+        && firestore.get(/databases/(default)/documents/scans/$(scanId)).data.status == 'uploading';
+      allow read, update, delete: if false;
+    }
+
+    match /scans/{uid}/{scanId}/{fileName} {
+      allow read: if owner(uid);
+      allow write: if false;
+    }
+
+    match /reports/{uid}/{fileName} {
+      allow read: if owner(uid) && fileName.matches('.+\\.pdf');
+      allow write: if false;
+    }
+
+    match /{allPaths=**} { allow read, write: if false; }
+  }
+}

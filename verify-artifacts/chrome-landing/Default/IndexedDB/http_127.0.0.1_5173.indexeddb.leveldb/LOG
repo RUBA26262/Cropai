@@ -1,0 +1,6 @@
+2026/08/31-18:33:39.739 509c Creating DB D:\cropai\verify-artifacts\chrome-landing\Default\IndexedDB\http_127.0.0.1_5173.indexeddb.leveldb since it was missing.
+2026/08/31-18:33:39.745 509c Reusing MANIFEST D:\cropai\verify-artifacts\chrome-landing\Default\IndexedDB\http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001
+2026/08/31-18:33:39.766 4920 Level-0 table #5: started
+2026/08/31-18:33:39.770 4920 Level-0 table #5: 1266 bytes OK
+2026/08/31-18:33:39.773 4920 Delete type=0 #3
+2026/08/31-18:33:39.773 509c Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

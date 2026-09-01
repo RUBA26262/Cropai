@@ -1,0 +1,105 @@
+{
+  "sourcePptx": "C:\\Users\\dell\\Desktop\\CropAI_SIH_26131_Trouble_Shooters.pptx",
+  "workspace": "D:\\cropai\\.codex-ppt-work\\crop",
+  "outDir": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect",
+  "generatedAt": "2026-09-01T04:18:46.287Z",
+  "slideCount": 7,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\source-slides\\source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\layouts\\source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    },
+    {
+      "slide": 2,
+      "previewPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\source-slides\\source-slide-02.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-02.png",
+      "layoutPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\layouts\\source-slide-02.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-02.layout.json"
+    },
+    {
+      "slide": 3,
+      "previewPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\source-slides\\source-slide-03.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-03.png",
+      "layoutPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\layouts\\source-slide-03.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-03.layout.json"
+    },
+    {
+      "slide": 4,
+      "previewPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\source-slides\\source-slide-04.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-04.png",
+      "layoutPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\layouts\\source-slide-04.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-04.layout.json"
+    },
+    {
+      "slide": 5,
+      "previewPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\source-slides\\source-slide-05.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-05.png",
+      "layoutPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\layouts\\source-slide-05.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-05.layout.json"
+    },
+    {
+      "slide": 6,
+      "previewPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\source-slides\\source-slide-06.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-06.png",
+      "layoutPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\layouts\\source-slide-06.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-06.layout.json"
+    },
+    {
+      "slide": 7,
+      "previewPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\source-slides\\source-slide-07.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-07.png",
+      "layoutPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\layouts\\source-slide-07.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-07.layout.json"
+    }
+  ],
+  "inspectPath": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "xftvny",
+    "target": {
+      "id": "pr/ltzcxk"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/image.png",
+      "path": "D:\\cropai\\.codex-ppt-work\\crop\\template-inspect\\assets\\ppt\\media\\image.png",
+      "relativePath": "template-inspect/assets/ppt/media/image.png",
+      "bytes": 294906
+    }
+  ],
+  "fonts": [
+    "+mj-lt",
+    "+mn-lt",
+    "Calibri",
+    "Calibri Light"
+  ],
+  "packageParts": {
+    "mediaCount": 1,
+    "slideXmlCount": 7,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

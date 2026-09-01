@@ -1,0 +1,25 @@
+{
+  "name": "cropai-functions",
+  "private": true,
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "engines": { "node": "22" },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "test": "npm run build && node --test --test-isolation=none test/riskEngine.test.mjs",
+    "test:rules": "firebase emulators:exec --config ../firebase.test.json --project cropai-test --only firestore,storage \"node --test test/security-rules.test.mjs\""
+  },
+  "dependencies": {
+    "@google-cloud/tasks": "^6.2.1",
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^6.4.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^5.0.2",
+    "firebase": "^12.2.1",
+    "firebase-tools": "^14.12.1",
+    "typescript": "^5.7.3"
+  }
+}

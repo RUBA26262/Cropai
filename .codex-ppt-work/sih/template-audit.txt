@@ -1,0 +1,5 @@
+The SIH source contains seven 16:9 slides. Slide 1 is a title frame; slides 2-6 share a white canvas, centered serif heading, team-name oval, SIH 2026 logo, and blue footer; slide 7 contains instructions and is excluded from the output.
+
+The output preserves the CropAI deck's seven-slide order and substantive content. The SIH title frame is reused for slide 1. SIH content frames are duplicated for slides 2-7. Template prompt text is removed only through explicitly mapped inherited objects. Titles, team name, page number, logo, and footer remain in the SIH visual system.
+
+Typography and inherited chrome are retained from the SIH source. CropAI body content is placed as an exact cropped capture in the bounded region between the SIH header and footer to preserve charts, tables, screenshot, and wording without reinterpretation.

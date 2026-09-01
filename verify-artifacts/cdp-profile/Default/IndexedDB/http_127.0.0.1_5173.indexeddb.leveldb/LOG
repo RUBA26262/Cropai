@@ -1,0 +1,7 @@
+2026/08/31-18:34:21.147 3f38 Creating DB D:\cropai\verify-artifacts\cdp-profile\Default\IndexedDB\http_127.0.0.1_5173.indexeddb.leveldb since it was missing.
+2026/08/31-18:34:21.159 3f38 Reusing MANIFEST D:\cropai\verify-artifacts\cdp-profile\Default\IndexedDB\http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001
+2026/08/31-18:34:21.178 3a68 Level-0 table #5: started
+2026/08/31-18:34:21.180 3a68 Level-0 table #5: 1313 bytes OK
+2026/08/31-18:34:21.183 3a68 Delete type=0 #3
+2026/08/31-18:34:21.183 62c0 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/08/31-18:35:14.108 3a68 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,6 @@
+Official SIH judging criteria: https://sih.gov.in/letters/Guidelines-College-SPOC.pdf
+NPSS official PIB release: https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2114896&lang=2&reg=48
+Plantix official features: https://plantix.net/en/download/
+PlantVillage Nuru evidence: https://bigdata.cgiar.org/inspire/inspire-challenge-2017/pest-and-disease-monitoring-by-using-artificial-intelligence/
+CropAI implementation evidence: D:/cropai/README.md and current repository.
+Product screenshot: C:/Users/dell/AppData/Local/Temp/codex-clipboard-76db22f4-da7b-41d5-8ff3-fe9a15d3a1a4.png

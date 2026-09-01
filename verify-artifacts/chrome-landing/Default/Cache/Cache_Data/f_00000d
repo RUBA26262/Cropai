@@ -1,0 +1,297 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/Navbar.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8e4b4601"; const Fragment = __vite__cjsImport0_react_jsxDevRuntime["Fragment"]; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("D:/cropai/frontend/src/components/Navbar.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import { Link, NavLink, useNavigate } from "/node_modules/.vite/deps/react-router-dom.js?v=8e4b4601";
+import { Bell, Leaf, LogOut, Menu, Settings, ShieldCheck, SunMoon, X } from "/node_modules/.vite/deps/lucide-react.js?v=8e4b4601";
+import __vite__cjsImport5_react from "/node_modules/.vite/deps/react.js?v=8e4b4601"; const useEffect = __vite__cjsImport5_react["useEffect"]; const useState = __vite__cjsImport5_react["useState"];
+import { useAuth } from "/src/context/AuthContext.jsx";
+import { useTheme } from "/src/context/ThemeContext.jsx";
+import { useI18n } from "/src/context/I18nContext.jsx?t=1788181345103";
+import { alertApi, profileApi } from "/src/services/api.js";
+export default function Navbar() {
+  _s();
+  const { user, logout } = useAuth();
+  const { theme, setTheme } = useTheme();
+  const { locale, setLocale, t } = useI18n();
+  const navigate = useNavigate();
+  const [unreadCount, setUnreadCount] = useState(0);
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (user) alertApi.list().then((response) => setUnreadCount(response.data.filter((alert) => !alert.is_read).length)).catch(() => {
+    });
+  }, [user]);
+  useEffect(() => {
+    if (user?.theme && !localStorage.getItem("cropai_theme_synced")) {
+      setTheme(user.theme);
+      localStorage.setItem("cropai_theme_synced", "true");
+    }
+    ;
+    if (user?.language && !localStorage.getItem("cropai_language_synced")) {
+      setLocale(user.language);
+      localStorage.setItem("cropai_language_synced", "true");
+    }
+  }, [user, setTheme, setLocale]);
+  const updateTheme = (value) => {
+    setTheme(value);
+    if (user) profileApi.update({ theme: value }).catch(() => {
+    });
+  };
+  const updateLocale = (value) => {
+    setLocale(value);
+    if (user) profileApi.update({ language: value }).catch(() => {
+    });
+  };
+  const links = user ? [
+    ["/dashboard", t("dashboard")],
+    ["/farms", t("farms")],
+    ["/scan", t("scan")],
+    ["/history", t("history")],
+    ...user.role === "expert" ? [["/expert", "Expert queue"]] : [],
+    ...user.role === "admin" ? [["/admin", "Administration"]] : []
+  ] : [];
+  return /* @__PURE__ */ jsxDEV("header", { className: "sticky top-0 z-40 backdrop-blur bg-[color:var(--background)]/90 border-b border-[var(--border)]", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4", children: [
+      /* @__PURE__ */ jsxDEV(Link, { to: user ? "/dashboard" : "/", className: "flex items-center gap-2 text-xl font-semibold", children: [
+        /* @__PURE__ */ jsxDEV(Leaf, { className: "w-5 h-5 text-[var(--primary)]" }, void 0, false, {
+          fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+          lineNumber: 41,
+          columnNumber: 102
+        }, this),
+        " CropAI"
+      ] }, void 0, true, {
+        fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+        lineNumber: 41,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("nav", { className: "hidden lg:flex items-center gap-1", children: links.map(([path, label]) => /* @__PURE__ */ jsxDEV(NavLink, { to: path, className: ({ isActive }) => `rounded-full px-3 py-2 text-sm font-medium transition-colors ${isActive ? "bg-[var(--primary)] text-[var(--primary-text)]" : "muted hover:bg-[var(--surface-muted)] hover:text-[var(--text)]"}`, children: label }, path, false, {
+        fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+        lineNumber: 42,
+        columnNumber: 88
+      }, this)) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+        lineNumber: 42,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxDEV("label", { className: "sr-only", htmlFor: "language", children: t("language") }, void 0, false, {
+          fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+          lineNumber: 44,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("select", { id: "language", className: "field !w-auto !py-1.5 !px-2 text-xs", value: locale, onChange: (event) => updateLocale(event.target.value), children: [
+          /* @__PURE__ */ jsxDEV("option", { value: "mr", children: "मराठी" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 45,
+            columnNumber: 149
+          }, this),
+          /* @__PURE__ */ jsxDEV("option", { value: "hi", children: "हिन्दी" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 45,
+            columnNumber: 182
+          }, this),
+          /* @__PURE__ */ jsxDEV("option", { value: "en", children: "EN" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 45,
+            columnNumber: 216
+          }, this)
+        ] }, void 0, true, {
+          fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+          lineNumber: 45,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("label", { className: "sr-only", htmlFor: "theme", children: t("theme") }, void 0, false, {
+          fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+          lineNumber: 46,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "relative", children: [
+          /* @__PURE__ */ jsxDEV(SunMoon, { className: "w-4 h-4 absolute left-2 top-2 muted pointer-events-none" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 47,
+            columnNumber: 35
+          }, this),
+          /* @__PURE__ */ jsxDEV("select", { id: "theme", className: "field !w-auto !py-1.5 !pl-7 !pr-2 text-xs", value: theme, onChange: (event) => updateTheme(event.target.value), children: [
+            /* @__PURE__ */ jsxDEV("option", { value: "system", children: t("system") }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+              lineNumber: 47,
+              columnNumber: 255
+            }, this),
+            /* @__PURE__ */ jsxDEV("option", { value: "light", children: t("light") }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+              lineNumber: 47,
+              columnNumber: 300
+            }, this),
+            /* @__PURE__ */ jsxDEV("option", { value: "dark", children: t("dark") }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+              lineNumber: 47,
+              columnNumber: 343
+            }, this)
+          ] }, void 0, true, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 47,
+            columnNumber: 114
+          }, this)
+        ] }, void 0, true, {
+          fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+          lineNumber: 47,
+          columnNumber: 9
+        }, this),
+        user ? /* @__PURE__ */ jsxDEV(Fragment, { children: [
+          /* @__PURE__ */ jsxDEV(NavLink, { to: "/alerts", className: ({ isActive }) => `relative rounded-full p-2 ${isActive ? "bg-[var(--primary)] text-[var(--primary-text)]" : "muted"}`, "aria-label": t("alerts"), children: [
+            /* @__PURE__ */ jsxDEV(Bell, { className: "w-5 h-5" }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+              lineNumber: 49,
+              columnNumber: 189
+            }, this),
+            unreadCount > 0 && /* @__PURE__ */ jsxDEV("span", { className: "absolute top-0 right-0 bg-red-600 text-white text-[10px] min-w-4 h-4 rounded-full grid place-items-center", children: [
+              Math.min(unreadCount, 9),
+              unreadCount > 9 ? "+" : ""
+            ] }, void 0, true, {
+              fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+              lineNumber: 49,
+              columnNumber: 237
+            }, this)
+          ] }, void 0, true, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 49,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV(NavLink, { to: "/settings", className: ({ isActive }) => `rounded-full p-2 ${isActive ? "bg-[var(--primary)] text-[var(--primary-text)]" : "muted"}`, "aria-label": t("settings"), children: /* @__PURE__ */ jsxDEV(Settings, { className: "w-5 h-5" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 50,
+            columnNumber: 184
+          }, this) }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 50,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("button", { onClick: () => logout().then(() => navigate("/")), className: "hidden sm:flex p-2 muted", "aria-label": t("logout"), children: /* @__PURE__ */ jsxDEV(LogOut, { className: "w-5 h-5" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 51,
+            columnNumber: 132
+          }, this) }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 51,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("button", { className: "lg:hidden p-2", onClick: () => setOpen(!open), "aria-label": "Menu", children: open ? /* @__PURE__ */ jsxDEV(X, {}, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 52,
+            columnNumber: 102
+          }, this) : /* @__PURE__ */ jsxDEV(Menu, {}, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 52,
+            columnNumber: 110
+          }, this) }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 52,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+          lineNumber: 48,
+          columnNumber: 17
+        }, this) : /* @__PURE__ */ jsxDEV(Fragment, { children: [
+          /* @__PURE__ */ jsxDEV(Link, { to: "/login", className: "secondary-button text-sm", children: "Sign in" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 53,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV(Link, { to: "/register", className: "primary-button text-sm hidden sm:inline-flex", children: "Farmer registration" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+            lineNumber: 53,
+            columnNumber: 86
+          }, this)
+        ] }, void 0, true, {
+          fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+          lineNumber: 53,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+        lineNumber: 43,
+        columnNumber: 7
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+      lineNumber: 40,
+      columnNumber: 5
+    }, this),
+    open && user && /* @__PURE__ */ jsxDEV("nav", { className: "lg:hidden px-4 pb-4 grid gap-2 bg-[var(--background)]", children: [
+      links.map(([path, label]) => /* @__PURE__ */ jsxDEV(NavLink, { onClick: () => setOpen(false), to: path, className: ({ isActive }) => `rounded-xl border px-4 py-3 text-sm font-medium ${isActive ? "border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-text)]" : "border-[var(--border)] bg-[var(--surface)]"}`, children: label }, path, false, {
+        fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+        lineNumber: 56,
+        columnNumber: 123
+      }, this)),
+      /* @__PURE__ */ jsxDEV("button", { onClick: () => logout().then(() => navigate("/")), className: "secondary-button", children: [
+        /* @__PURE__ */ jsxDEV(LogOut, { className: "w-4" }, void 0, false, {
+          fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+          lineNumber: 56,
+          columnNumber: 505
+        }, this),
+        " ",
+        t("logout")
+      ] }, void 0, true, {
+        fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+        lineNumber: 56,
+        columnNumber: 417
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+      lineNumber: 56,
+      columnNumber: 22
+    }, this),
+    user && user.role !== "farmer" && /* @__PURE__ */ jsxDEV("div", { className: "bg-[var(--surface-muted)] border-t border-[var(--border)] text-xs text-center py-1 muted", children: [
+      /* @__PURE__ */ jsxDEV(ShieldCheck, { className: "inline w-3 h-3 mr-1" }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+        lineNumber: 57,
+        columnNumber: 146
+      }, this),
+      user.role === "expert" ? "Verified expert session" : "Administrator session"
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+      lineNumber: 57,
+      columnNumber: 40
+    }, this)
+  ] }, void 0, true, {
+    fileName: "D:/cropai/frontend/src/components/Navbar.jsx",
+    lineNumber: 39,
+    columnNumber: 10
+  }, this);
+}
+_s(Navbar, "uqxz+WjDygh5sAu0BpGJZKLkyrg=", false, function() {
+  return [useAuth, useTheme, useI18n, useNavigate];
+});
+_c = Navbar;
+var _c;
+$RefreshReg$(_c, "Navbar");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("D:/cropai/frontend/src/components/Navbar.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("D:/cropai/frontend/src/components/Navbar.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUEyRSw0Q0FBNEMsSUFBS0QsbUJBQXRRRCxNQUFkO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBMFIsQ0FBVTtBQUFBLE1BQUUsdUJBQUMsWUFBTyxTQUFTLE1BQU0vQixPQUFPLEVBQUVZLEtBQUssTUFBTU4sU0FBUyxHQUFHLENBQUMsR0FBRyxXQUFVLG9CQUFtQjtBQUFBLCtCQUFDLFVBQU8sV0FBVSxTQUFsQjtBQUFBO0FBQUE7QUFBQTtBQUFBLGVBQXVCO0FBQUEsUUFBRztBQUFBLFFBQUVELEVBQUUsUUFBUTtBQUFBLFdBQTlIO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBZ0k7QUFBQSxTQUEzZ0I7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQUFvaEI7QUFBQSxJQUNwaUJOLFFBQVFBLEtBQUs4QixTQUFTLFlBQVksdUJBQUMsU0FBSSxXQUFVLDRGQUEyRjtBQUFBLDZCQUFDLGVBQVksV0FBVSx5QkFBdkI7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUE0QztBQUFBLE1BQUk5QixLQUFLOEIsU0FBUyxXQUFXLDRCQUE0QjtBQUFBLFNBQS9NO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FBdU87QUFBQSxPQWxCclE7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQW1CUDtBQUNGO0FBQUMvQixHQS9CdUJELFFBQU07QUFBQSxVQUNITCxTQUF1Q0MsVUFBNkNDLFNBQzVGYixXQUFXO0FBQUE7QUFBQSxLQUZOZ0I7QUFBTSxJQUFBeUM7QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsiTGluayIsIk5hdkxpbmsiLCJ1c2VOYXZpZ2F0ZSIsIkJlbGwiLCJMZWFmIiwiTG9nT3V0IiwiTWVudSIsIlNldHRpbmdzIiwiU2hpZWxkQ2hlY2siLCJTdW5Nb29uIiwiWCIsInVzZUVmZmVjdCIsInVzZVN0YXRlIiwidXNlQXV0aCIsInVzZVRoZW1lIiwidXNlSTE4biIsImFsZXJ0QXBpIiwicHJvZmlsZUFwaSIsIk5hdmJhciIsIl9zIiwidXNlciIsImxvZ291dCIsInRoZW1lIiwic2V0VGhlbWUiLCJsb2NhbGUiLCJzZXRMb2NhbGUiLCJ0IiwibmF2aWdhdGUiLCJ1bnJlYWRDb3VudCIsInNldFVucmVhZENvdW50Iiwib3BlbiIsInNldE9wZW4iLCJsaXN0IiwidGhlbiIsInJlc3BvbnNlIiwiZGF0YSIsImZpbHRlciIsImFsZXJ0IiwiaXNfcmVhZCIsImxlbmd0aCIsImNhdGNoIiwibG9jYWxTdG9yYWdlIiwiZ2V0SXRlbSIsInNldEl0ZW0iLCJsYW5ndWFnZSIsInVwZGF0ZVRoZW1lIiwidmFsdWUiLCJ1cGRhdGUiLCJ1cGRhdGVMb2NhbGUiLCJsaW5rcyIsInJvbGUiLCJtYXAiLCJwYXRoIiwibGFiZWwiLCJpc0FjdGl2ZSIsImV2ZW50IiwidGFyZ2V0IiwiTWF0aCIsIm1pbiIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIk5hdmJhci5qc3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTGluaywgTmF2TGluaywgdXNlTmF2aWdhdGUgfSBmcm9tICdyZWFjdC1yb3V0ZXItZG9tJ1xuaW1wb3J0IHsgQmVsbCwgTGVhZiwgTG9nT3V0LCBNZW51LCBTZXR0aW5ncywgU2hpZWxkQ2hlY2ssIFN1bk1vb24sIFggfSBmcm9tICdsdWNpZGUtcmVhY3QnXG5pbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnXG5pbXBvcnQgeyB1c2VBdXRoIH0gZnJvbSAnLi4vY29udGV4dC9BdXRoQ29udGV4dCdcbmltcG9ydCB7IHVzZVRoZW1lIH0gZnJvbSAnLi4vY29udGV4dC9UaGVtZUNvbnRleHQnXG5pbXBvcnQgeyB1c2VJMThuIH0gZnJvbSAnLi4vY29udGV4dC9JMThuQ29udGV4dCdcbmltcG9ydCB7IGFsZXJ0QXBpLCBwcm9maWxlQXBpIH0gZnJvbSAnLi4vc2VydmljZXMvYXBpJ1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBOYXZiYXIoKSB7XG4gIGNvbnN0IHsgdXNlciwgbG9nb3V0IH0gPSB1c2VBdXRoKCk7IGNvbnN0IHsgdGhlbWUsIHNldFRoZW1lIH0gPSB1c2VUaGVtZSgpOyBjb25zdCB7IGxvY2FsZSwgc2V0TG9jYWxlLCB0IH0gPSB1c2VJMThuKClcbiAgY29uc3QgbmF2aWdhdGUgPSB1c2VOYXZpZ2F0ZSgpOyBjb25zdCBbdW5yZWFkQ291bnQsIHNldFVucmVhZENvdW50XSA9IHVzZVN0YXRlKDApOyBjb25zdCBbb3Blbiwgc2V0T3Blbl0gPSB1c2VTdGF0ZShmYWxzZSlcbiAgdXNlRWZmZWN0KCgpID0+IHsgaWYgKHVzZXIpIGFsZXJ0QXBpLmxpc3QoKS50aGVuKChyZXNwb25zZSkgPT4gc2V0VW5yZWFkQ291bnQocmVzcG9uc2UuZGF0YS5maWx0ZXIoKGFsZXJ0KSA9PiAhYWxlcnQuaXNfcmVhZCkubGVuZ3RoKSkuY2F0Y2goKCkgPT4ge30pIH0sIFt1c2VyXSlcbiAgdXNlRWZmZWN0KCgpID0+IHsgaWYgKHVzZXI/LnRoZW1lICYmICFsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY3JvcGFpX3RoZW1lX3N5bmNlZCcpKSB7IHNldFRoZW1lKHVzZXIudGhlbWUpOyBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgnY3JvcGFpX3RoZW1lX3N5bmNlZCcsICd0cnVlJykgfTsgaWYgKHVzZXI/Lmxhbmd1YWdlICYmICFsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY3JvcGFpX2xhbmd1YWdlX3N5bmNlZCcpKSB7IHNldExvY2FsZSh1c2VyLmxhbmd1YWdlKTsgbG9jYWxTdG9yYWdlLnNldEl0ZW0oJ2Nyb3BhaV9sYW5ndWFnZV9zeW5jZWQnLCAndHJ1ZScpIH0gfSwgW3VzZXIsIHNldFRoZW1lLCBzZXRMb2NhbGVdKVxuICBjb25zdCB1cGRhdGVUaGVtZSA9ICh2YWx1ZSkgPT4geyBzZXRUaGVtZSh2YWx1ZSk7IGlmICh1c2VyKSBwcm9maWxlQXBpLnVwZGF0ZSh7IHRoZW1lOiB2YWx1ZSB9KS5jYXRjaCgoKSA9PiB7fSkgfVxuICBjb25zdCB1cGRhdGVMb2NhbGUgPSAodmFsdWUpID0+IHsgc2V0TG9jYWxlKHZhbHVlKTsgaWYgKHVzZXIpIHByb2ZpbGVBcGkudXBkYXRlKHsgbGFuZ3VhZ2U6IHZhbHVlIH0pLmNhdGNoKCgpID0+IHt9KSB9XG4gIGNvbnN0IGxpbmtzID0gdXNlciA/IFtcbiAgICBbJy9kYXNoYm9hcmQnLCB0KCdkYXNoYm9hcmQnKV0sIFsnL2Zhcm1zJywgdCgnZmFybXMnKV0sIFsnL3NjYW4nLCB0KCdzY2FuJyldLCBbJy9oaXN0b3J5JywgdCgnaGlzdG9yeScpXSxcbiAgICAuLi4odXNlci5yb2xlID09PSAnZXhwZXJ0JyA/IFtbJy9leHBlcnQnLCAnRXhwZXJ0IHF1ZXVlJ11dIDogW10pLCAuLi4odXNlci5yb2xlID09PSAnYWRtaW4nID8gW1snL2FkbWluJywgJ0FkbWluaXN0cmF0aW9uJ11dIDogW10pLFxuICBdIDogW11cbiAgcmV0dXJuIDxoZWFkZXIgY2xhc3NOYW1lPVwic3RpY2t5IHRvcC0wIHotNDAgYmFja2Ryb3AtYmx1ciBiZy1bY29sb3I6dmFyKC0tYmFja2dyb3VuZCldLzkwIGJvcmRlci1iIGJvcmRlci1bdmFyKC0tYm9yZGVyKV1cIj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cIm1heC13LTd4bCBteC1hdXRvIHB4LTQgc206cHgtNiBoLTE2IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtNFwiPlxuICAgICAgPExpbmsgdG89e3VzZXIgPyAnL2Rhc2hib2FyZCcgOiAnLyd9IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHRleHQteGwgZm9udC1zZW1pYm9sZFwiPjxMZWFmIGNsYXNzTmFtZT1cInctNSBoLTUgdGV4dC1bdmFyKC0tcHJpbWFyeSldXCIgLz4gQ3JvcEFJPC9MaW5rPlxuICAgICAgPG5hdiBjbGFzc05hbWU9XCJoaWRkZW4gbGc6ZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTFcIj57bGlua3MubWFwKChbcGF0aCwgbGFiZWxdKSA9PiA8TmF2TGluayBrZXk9e3BhdGh9IHRvPXtwYXRofSBjbGFzc05hbWU9eyh7IGlzQWN0aXZlIH0pID0+IGByb3VuZGVkLWZ1bGwgcHgtMyBweS0yIHRleHQtc20gZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1jb2xvcnMgJHtpc0FjdGl2ZSA/ICdiZy1bdmFyKC0tcHJpbWFyeSldIHRleHQtW3ZhcigtLXByaW1hcnktdGV4dCldJyA6ICdtdXRlZCBob3ZlcjpiZy1bdmFyKC0tc3VyZmFjZS1tdXRlZCldIGhvdmVyOnRleHQtW3ZhcigtLXRleHQpXSd9YH0+e2xhYmVsfTwvTmF2TGluaz4pfTwvbmF2PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMlwiPlxuICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPVwic3Itb25seVwiIGh0bWxGb3I9XCJsYW5ndWFnZVwiPnt0KCdsYW5ndWFnZScpfTwvbGFiZWw+XG4gICAgICAgIDxzZWxlY3QgaWQ9XCJsYW5ndWFnZVwiIGNsYXNzTmFtZT1cImZpZWxkICF3LWF1dG8gIXB5LTEuNSAhcHgtMiB0ZXh0LXhzXCIgdmFsdWU9e2xvY2FsZX0gb25DaGFuZ2U9eyhldmVudCkgPT4gdXBkYXRlTG9jYWxlKGV2ZW50LnRhcmdldC52YWx1ZSl9PjxvcHRpb24gdmFsdWU9XCJtclwiPuCkruCksOCkvuCkoOClgDwvb3B0aW9uPjxvcHRpb24gdmFsdWU9XCJoaVwiPuCkueCkv+CkqOCljeCkpuClgDwvb3B0aW9uPjxvcHRpb24gdmFsdWU9XCJlblwiPkVOPC9vcHRpb24+PC9zZWxlY3Q+XG4gICAgICAgIDxsYWJlbCBjbGFzc05hbWU9XCJzci1vbmx5XCIgaHRtbEZvcj1cInRoZW1lXCI+e3QoJ3RoZW1lJyl9PC9sYWJlbD5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZVwiPjxTdW5Nb29uIGNsYXNzTmFtZT1cInctNCBoLTQgYWJzb2x1dGUgbGVmdC0yIHRvcC0yIG11dGVkIHBvaW50ZXItZXZlbnRzLW5vbmVcIiAvPjxzZWxlY3QgaWQ9XCJ0aGVtZVwiIGNsYXNzTmFtZT1cImZpZWxkICF3LWF1dG8gIXB5LTEuNSAhcGwtNyAhcHItMiB0ZXh0LXhzXCIgdmFsdWU9e3RoZW1lfSBvbkNoYW5nZT17KGV2ZW50KSA9PiB1cGRhdGVUaGVtZShldmVudC50YXJnZXQudmFsdWUpfT48b3B0aW9uIHZhbHVlPVwic3lzdGVtXCI+e3QoJ3N5c3RlbScpfTwvb3B0aW9uPjxvcHRpb24gdmFsdWU9XCJsaWdodFwiPnt0KCdsaWdodCcpfTwvb3B0aW9uPjxvcHRpb24gdmFsdWU9XCJkYXJrXCI+e3QoJ2RhcmsnKX08L29wdGlvbj48L3NlbGVjdD48L2Rpdj5cbiAgICAgICAge3VzZXIgPyA8PlxuICAgICAgICAgIDxOYXZMaW5rIHRvPVwiL2FsZXJ0c1wiIGNsYXNzTmFtZT17KHsgaXNBY3RpdmUgfSkgPT4gYHJlbGF0aXZlIHJvdW5kZWQtZnVsbCBwLTIgJHtpc0FjdGl2ZSA/ICdiZy1bdmFyKC0tcHJpbWFyeSldIHRleHQtW3ZhcigtLXByaW1hcnktdGV4dCldJyA6ICdtdXRlZCd9YH0gYXJpYS1sYWJlbD17dCgnYWxlcnRzJyl9PjxCZWxsIGNsYXNzTmFtZT1cInctNSBoLTVcIiAvPnt1bnJlYWRDb3VudCA+IDAgJiYgPHNwYW4gY2xhc3NOYW1lPVwiYWJzb2x1dGUgdG9wLTAgcmlnaHQtMCBiZy1yZWQtNjAwIHRleHQtd2hpdGUgdGV4dC1bMTBweF0gbWluLXctNCBoLTQgcm91bmRlZC1mdWxsIGdyaWQgcGxhY2UtaXRlbXMtY2VudGVyXCI+e01hdGgubWluKHVucmVhZENvdW50LCA5KX17dW5yZWFkQ291bnQgPiA5ID8gJysnIDogJyd9PC9zcGFuPn08L05hdkxpbms+XG4gICAgICAgICAgPE5hdkxpbmsgdG89XCIvc2V0dGluZ3NcIiBjbGFzc05hbWU9eyh7IGlzQWN0aXZlIH0pID0+IGByb3VuZGVkLWZ1bGwgcC0yICR7aXNBY3RpdmUgPyAnYmctW3ZhcigtLXByaW1hcnkpXSB0ZXh0LVt2YXIoLS1wcmltYXJ5LXRleHQpXScgOiAnbXV0ZWQnfWB9IGFyaWEtbGFiZWw9e3QoJ3NldHRpbmdzJyl9PjxTZXR0aW5ncyBjbGFzc05hbWU9XCJ3LTUgaC01XCIgLz48L05hdkxpbms+XG4gICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBsb2dvdXQoKS50aGVuKCgpID0+IG5hdmlnYXRlKCcvJykpfSBjbGFzc05hbWU9XCJoaWRkZW4gc206ZmxleCBwLTIgbXV0ZWRcIiBhcmlhLWxhYmVsPXt0KCdsb2dvdXQnKX0+PExvZ091dCBjbGFzc05hbWU9XCJ3LTUgaC01XCIgLz48L2J1dHRvbj5cbiAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImxnOmhpZGRlbiBwLTJcIiBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKCFvcGVuKX0gYXJpYS1sYWJlbD1cIk1lbnVcIj57b3BlbiA/IDxYIC8+IDogPE1lbnUgLz59PC9idXR0b24+XG4gICAgICAgIDwvPiA6IDw+PExpbmsgdG89XCIvbG9naW5cIiBjbGFzc05hbWU9XCJzZWNvbmRhcnktYnV0dG9uIHRleHQtc21cIj5TaWduIGluPC9MaW5rPjxMaW5rIHRvPVwiL3JlZ2lzdGVyXCIgY2xhc3NOYW1lPVwicHJpbWFyeS1idXR0b24gdGV4dC1zbSBoaWRkZW4gc206aW5saW5lLWZsZXhcIj5GYXJtZXIgcmVnaXN0cmF0aW9uPC9MaW5rPjwvPn1cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIHtvcGVuICYmIHVzZXIgJiYgPG5hdiBjbGFzc05hbWU9XCJsZzpoaWRkZW4gcHgtNCBwYi00IGdyaWQgZ2FwLTIgYmctW3ZhcigtLWJhY2tncm91bmQpXVwiPntsaW5rcy5tYXAoKFtwYXRoLCBsYWJlbF0pID0+IDxOYXZMaW5rIGtleT17cGF0aH0gb25DbGljaz17KCkgPT4gc2V0T3BlbihmYWxzZSl9IHRvPXtwYXRofSBjbGFzc05hbWU9eyh7IGlzQWN0aXZlIH0pID0+IGByb3VuZGVkLXhsIGJvcmRlciBweC00IHB5LTMgdGV4dC1zbSBmb250LW1lZGl1bSAke2lzQWN0aXZlID8gJ2JvcmRlci1bdmFyKC0tcHJpbWFyeSldIGJnLVt2YXIoLS1wcmltYXJ5KV0gdGV4dC1bdmFyKC0tcHJpbWFyeS10ZXh0KV0nIDogJ2JvcmRlci1bdmFyKC0tYm9yZGVyKV0gYmctW3ZhcigtLXN1cmZhY2UpXSd9YH0+e2xhYmVsfTwvTmF2TGluaz4pfTxidXR0b24gb25DbGljaz17KCkgPT4gbG9nb3V0KCkudGhlbigoKSA9PiBuYXZpZ2F0ZSgnLycpKX0gY2xhc3NOYW1lPVwic2Vjb25kYXJ5LWJ1dHRvblwiPjxMb2dPdXQgY2xhc3NOYW1lPVwidy00XCIgLz4ge3QoJ2xvZ291dCcpfTwvYnV0dG9uPjwvbmF2Pn1cbiAgICB7dXNlciAmJiB1c2VyLnJvbGUgIT09ICdmYXJtZXInICYmIDxkaXYgY2xhc3NOYW1lPVwiYmctW3ZhcigtLXN1cmZhY2UtbXV0ZWQpXSBib3JkZXItdCBib3JkZXItW3ZhcigtLWJvcmRlcildIHRleHQteHMgdGV4dC1jZW50ZXIgcHktMSBtdXRlZFwiPjxTaGllbGRDaGVjayBjbGFzc05hbWU9XCJpbmxpbmUgdy0zIGgtMyBtci0xXCIgLz57dXNlci5yb2xlID09PSAnZXhwZXJ0JyA/ICdWZXJpZmllZCBleHBlcnQgc2Vzc2lvbicgOiAnQWRtaW5pc3RyYXRvciBzZXNzaW9uJ308L2Rpdj59XG4gIDwvaGVhZGVyPlxufVxuIl0sImZpbGUiOiJEOi9jcm9wYWkvZnJvbnRlbmQvc3JjL2NvbXBvbmVudHMvTmF2YmFyLmpzeCJ9

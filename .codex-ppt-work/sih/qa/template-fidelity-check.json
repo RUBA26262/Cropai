@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-09-01T04:31:05.252Z",
+  "workspace": "D:\\cropai\\.codex-ppt-work\\sih",
+  "finalPptx": "D:\\cropai\\CropAI_SIH2026_Integrated.pptx",
+  "starterPptx": "D:\\cropai\\.codex-ppt-work\\sih\\template-starter.pptx",
+  "mapPath": "D:\\cropai\\.codex-ppt-work\\sih\\template-frame-map.json",
+  "starterLayoutDir": "D:\\cropai\\.codex-ppt-work\\sih\\template-starter-layout",
+  "finalLayoutDir": "D:\\cropai\\.codex-ppt-work\\final-layout\\final",
+  "editDir": "D:\\cropai\\.codex-ppt-work",
+  "issueCount": 0,
+  "issues": []
+}

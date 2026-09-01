@@ -1,0 +1,949 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/n1bvfz",
+    "id": "n1bvfz",
+    "slide": 7,
+    "layoutId": "46615d26-fc21-4f2a-85d6-0b80540a66d4",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2fc7a637-8ff4-48c5-8631-797490b5b282",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#173D2B",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "46615d26-fc21-4f2a-85d6-0b80540a66d4",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2fc7a637-8ff4-48c5-8631-797490b5b282",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2fc7a637-8ff4-48c5-8631-797490b5b282",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t8zuhgni",
+      "id": "1",
+      "bbox": [
+        64,
+        46,
+        400,
+        24
+      ],
+      "geometry": "rect",
+      "text": "THE OUTCOME",
+      "textPreview": "THE OUTCOME",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#79C98B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "THE OUTCOME"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "THE OUTCOME",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "THE OUTCOME",
+              "fontSize": 14,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65obml4r",
+      "id": "2",
+      "bbox": [
+        64,
+        82,
+        780,
+        112
+      ],
+      "geometry": "rect",
+      "text": "Earlier action. Safer advice.\nStronger extension reach.",
+      "textPreview": "Earlier action. Safer advice. | Stronger extension reach.",
+      "resolvedFontSize": 43,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 43,
+        "typeface": "+mn-lt",
+        "color": "#F6F2E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Earlier action. Safer advice."
+          },
+          {
+            "index": 2,
+            "text": "Stronger extension reach."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Earlier action. Safer advice.",
+          "resolvedTextStyle": {
+            "fontSize": 43,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Earlier action. Safer advice.",
+              "fontSize": 43,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Stronger extension reach.",
+          "resolvedTextStyle": {
+            "fontSize": 43,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Stronger extension reach.",
+              "fontSize": 43,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/76xsf65c",
+      "id": "3",
+      "bbox": [
+        64,
+        260,
+        350,
+        156
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#214D38",
+      "lineColor": "#47745A",
+      "lineWidth": 1
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k36tkbml",
+      "id": "4",
+      "bbox": [
+        88,
+        282,
+        300,
+        26
+      ],
+      "geometry": "rect",
+      "text": "FARMER",
+      "textPreview": "FARMER",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#79C98B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "FARMER"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "FARMER",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FARMER",
+              "fontSize": 15,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l4fadgn6",
+      "id": "5",
+      "bbox": [
+        88,
+        326,
+        300,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Understands what to do next in their language",
+      "textPreview": "Understands what to do next in their language",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#F6F2E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Understands what to do next in"
+          },
+          {
+            "index": 2,
+            "text": "their language"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Understands what to do next in their language",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Understands what to do next in their language",
+              "fontSize": 21,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1obi14v",
+      "id": "6",
+      "bbox": [
+        448,
+        260,
+        350,
+        156
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#214D38",
+      "lineColor": "#47745A",
+      "lineWidth": 1
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j2xsb65g",
+      "id": "7",
+      "bbox": [
+        472,
+        282,
+        300,
+        26
+      ],
+      "geometry": "rect",
+      "text": "EXPERT",
+      "textPreview": "EXPERT",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#79C98B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EXPERT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EXPERT",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EXPERT",
+              "fontSize": 15,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfmtgr6p",
+      "id": "8",
+      "bbox": [
+        472,
+        326,
+        300,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Prioritizes uncertain and high-risk cases",
+      "textPreview": "Prioritizes uncertain and high-risk cases",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#F6F2E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Prioritizes uncertain and"
+          },
+          {
+            "index": 2,
+            "text": "high-risk cases"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Prioritizes uncertain and high-risk cases",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Prioritizes uncertain and high-risk cases",
+              "fontSize": 21,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0fa9wna",
+      "id": "9",
+      "bbox": [
+        832,
+        260,
+        350,
+        156
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#214D38",
+      "lineColor": "#47745A",
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tkz2lkvi",
+      "id": "10",
+      "bbox": [
+        856,
+        282,
+        300,
+        26
+      ],
+      "geometry": "rect",
+      "text": "GOVERNMENT",
+      "textPreview": "GOVERNMENT",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#79C98B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GOVERNMENT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GOVERNMENT",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GOVERNMENT",
+              "fontSize": 15,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sjq1sfex",
+      "id": "11",
+      "bbox": [
+        856,
+        326,
+        300,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Sees privacy-safe emerging outbreak signals",
+      "textPreview": "Sees privacy-safe emerging outbreak signals",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#F6F2E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sees privacy-safe emerging"
+          },
+          {
+            "index": 2,
+            "text": "outbreak signals"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sees privacy-safe emerging outbreak signals",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sees privacy-safe emerging outbreak signals",
+              "fontSize": 21,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rih0jadc",
+      "id": "12",
+      "bbox": [
+        64,
+        476,
+        190,
+        26
+      ],
+      "geometry": "rect",
+      "text": "90-DAY PILOT",
+      "textPreview": "90-DAY PILOT",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#79C98B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "90-DAY PILOT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "90-DAY PILOT",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "90-DAY PILOT",
+              "fontSize": 15,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6h8jq5wr",
+      "id": "13",
+      "bbox": [
+        64,
+        514,
+        1100,
+        52
+      ],
+      "geometry": "rect",
+      "text": "1 district  →  6 priority crops  →  KVK expert validation  →  measurable follow-up outcomes",
+      "textPreview": "1 district  →  6 priority crops  →  KVK expert validation  →  measurable follow-up outcomes",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#F6F2E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1 district  →  6 priority crops  →  KVK expert validation  →  measurable follow-up outcomes"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1 district  →  6 priority crops  →  KVK expert validation  →  measurable follow-up outcomes",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1 district  →  6 priority crops  →  KVK expert validation  →  measurable follow-up outcomes",
+              "fontSize": 24,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gzih0v6",
+      "id": "14",
+      "bbox": [
+        64,
+        606,
+        1152,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#79C98B",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fq1ovel",
+      "id": "15",
+      "bbox": [
+        64,
+        626,
+        340,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Trouble Shooters",
+      "textPreview": "Trouble Shooters",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#79C98B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Trouble Shooters"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Trouble Shooters",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Trouble Shooters",
+              "fontSize": 22,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jeh0fad0",
+      "id": "16",
+      "bbox": [
+        520,
+        622,
+        696,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Let Maharashtra farmers act before damage spreads.",
+      "textPreview": "Let Maharashtra farmers act before damage spreads.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#F6F2E8",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Let Maharashtra farmers act before damage spreads."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Let Maharashtra farmers act before damage spreads.",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Let Maharashtra farmers act before damage spreads.",
+              "fontSize": 24,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

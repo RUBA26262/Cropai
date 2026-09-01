@@ -1,0 +1,33 @@
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/**/__pycache__/
+backend/*.db
+backend/.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Firebase / Functions
+functions/node_modules/
+functions/lib/
+.firebase/
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Cloud Run / ML artifacts
+inference/**/__pycache__/
+inference/models/*/
+!inference/models/README.md
+ml_pipeline/data/
+ml_pipeline/artifacts/
+
+# OS
+.DS_Store

@@ -1,0 +1,318 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/pages/public/Landing.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8e4b4601"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("D:/cropai/frontend/src/pages/public/Landing.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { Link } from "/node_modules/.vite/deps/react-router-dom.js?v=8e4b4601";
+import { Leaf, ScanLine, CloudSun, MessageCircle, ShieldCheck, ArrowRight } from "/node_modules/.vite/deps/lucide-react.js?v=8e4b4601";
+const STEPS = [
+  { title: "Add your farm", desc: "Register your farm, location, and the crops you grow." },
+  { title: "Scan a leaf", desc: "Upload or photograph a leaf from your field." },
+  { title: "Run validated analysis", desc: "The system refuses to guess when confidence or image quality is insufficient." },
+  { title: "Review the evidence", desc: "Use integrated management guidance or escalate an uncertain case to a verified expert." }
+];
+const FEATURES = [
+  { icon: ScanLine, title: "Guided multi-photo capture", desc: "Close-up and whole-plant views improve quality and preserve uncertainty." },
+  { icon: CloudSun, title: "Explainable weather risk", desc: "Crop-linked weather conditions help prioritize field inspection; risk is clearly labelled heuristic." },
+  { icon: MessageCircle, title: "Three-language support", desc: "Farmer workflows support Marathi, Hindi and English." },
+  { icon: ShieldCheck, title: "Private by design", desc: "Images are private, roles are server-controlled, and experts only see assigned cases." }
+];
+const CROPS = ["Cotton", "Soybean", "Sugarcane", "Onion", "Tomato", "Pomegranate"];
+export default function Landing() {
+  return /* @__PURE__ */ jsxDEV("div", { children: [
+    /* @__PURE__ */ jsxDEV("section", { className: "max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "inline-flex items-center gap-1.5 text-xs font-medium text-[var(--primary)] bg-[var(--surface-muted)] px-3 py-1 rounded-full", children: [
+          /* @__PURE__ */ jsxDEV(Leaf, { className: "w-3.5 h-3.5" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 46,
+            columnNumber: 13
+          }, this),
+          " AI-powered crop health"
+        ] }, void 0, true, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 45,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("h1", { className: "mt-5 text-5xl leading-tight font-display font-semibold text-[var(--text)]", children: "Protect your crops with AI." }, void 0, false, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 48,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mt-5 text-lg muted max-w-md", children: "Secure decision support for Maharashtra crop diseases and pests, with explicit uncertainty and verified-expert escalation." }, void 0, false, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 51,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mt-8 flex items-center gap-4", children: [
+          /* @__PURE__ */ jsxDEV(Link, { to: "/register", className: "primary-button !px-6 !py-3", children: [
+            "Start scanning free ",
+            /* @__PURE__ */ jsxDEV(ArrowRight, { className: "w-4 h-4" }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+              lineNumber: 57,
+              columnNumber: 35
+            }, this)
+          ] }, void 0, true, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 56,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV(Link, { to: "/login", className: "link", children: "I already have an account" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 59,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 55,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 44,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "surface rounded-3xl p-6", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "rounded-2xl bg-forest-900 aspect-[4/3] flex items-center justify-center relative overflow-hidden", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 bg-gradient-to-br from-forest-800 to-forest-900" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 68,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV(ScanLine, { className: "w-16 h-16 text-forest-300 relative animate-pulse" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 69,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "absolute bottom-4 left-4 right-4 bg-black/40 backdrop-blur rounded-xl px-4 py-3 text-cream text-sm", children: "Analyzing leaf image…" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 70,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 67,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mt-4 flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("p", { className: "text-sm muted", children: "Sample result" }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+              lineNumber: 76,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { className: "font-display text-lg font-semibold text-[var(--text)]", children: "Validated model required" }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+              lineNumber: 77,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, true, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 75,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-semibold text-clay-600", children: "No mock results" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 79,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 74,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 66,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+      lineNumber: 43,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "bg-[var(--surface-muted)] py-20", children: /* @__PURE__ */ jsxDEV("div", { className: "max-w-7xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV("h2", { className: "text-3xl font-display font-semibold text-[var(--text)] text-center", children: "How it works" }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 87,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "mt-12 grid md:grid-cols-4 gap-8", children: STEPS.map(
+        (step, i) => /* @__PURE__ */ jsxDEV("div", { className: "relative", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-semibold text-[var(--primary)]", children: String(i + 1).padStart(2, "0") }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 91,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("h3", { className: "mt-2 font-display text-lg font-semibold text-[var(--text)]", children: step.title }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 92,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { className: "mt-2 text-sm muted", children: step.desc }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 93,
+            columnNumber: 17
+          }, this)
+        ] }, step.title, true, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 90,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 88,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+      lineNumber: 86,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+      lineNumber: 85,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "max-w-7xl mx-auto px-6 py-20", children: [
+      /* @__PURE__ */ jsxDEV("h2", { className: "text-3xl font-display font-semibold text-[var(--text)] text-center", children: "Everything a farm needs" }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 102,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "mt-12 grid md:grid-cols-2 gap-6", children: FEATURES.map(
+        (f) => /* @__PURE__ */ jsxDEV("div", { className: "surface !shadow-none p-6 flex gap-4", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "w-11 h-11 rounded-xl bg-[var(--surface-muted)] flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxDEV(f.icon, { className: "w-5 h-5 text-[var(--primary)]" }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 107,
+            columnNumber: 17
+          }, this) }, void 0, false, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 106,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("h3", { className: "font-display font-semibold text-[var(--text)]", children: f.title }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+              lineNumber: 110,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-sm muted", children: f.desc }, void 0, false, {
+              fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+              lineNumber: 111,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+            lineNumber: 109,
+            columnNumber: 15
+          }, this)
+        ] }, f.title, true, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 105,
+          columnNumber: 11
+        }, this)
+      ) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 103,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+      lineNumber: 101,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "bg-forest-900 py-16", children: /* @__PURE__ */ jsxDEV("div", { className: "max-w-7xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV("h2", { className: "text-2xl font-display font-semibold text-cream text-center", children: "Supported crops" }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 121,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "mt-8 flex flex-wrap justify-center gap-3", children: CROPS.map(
+        (crop) => /* @__PURE__ */ jsxDEV("span", { className: "px-4 py-2 rounded-full bg-forest-800 text-forest-100 text-sm", children: crop }, crop, false, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 124,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 122,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "text-center text-forest-400 text-xs mt-6", children: "New crops are released only after dataset and field-validation gates pass." }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 129,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+      lineNumber: 120,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+      lineNumber: 119,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "max-w-4xl mx-auto px-6 py-24 text-center", children: [
+      /* @__PURE__ */ jsxDEV("h2", { className: "text-3xl font-display font-semibold text-[var(--text)]", children: "Start protecting your harvest today" }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 135,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "mt-3 muted", children: "Free to get started. No credit card required." }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 136,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Link, { to: "/register", className: "primary-button mt-8 !px-7 !py-3.5", children: [
+        "Create your account ",
+        /* @__PURE__ */ jsxDEV(ArrowRight, { className: "w-4 h-4" }, void 0, false, {
+          fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+          lineNumber: 138,
+          columnNumber: 31
+        }, this)
+      ] }, void 0, true, {
+        fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+        lineNumber: 137,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+      lineNumber: 134,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "D:/cropai/frontend/src/pages/public/Landing.jsx",
+    lineNumber: 41,
+    columnNumber: 5
+  }, this);
+}
+_c = Landing;
+var _c;
+$RefreshReg$(_c, "Landing");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("D:/cropai/frontend/src/pages/public/Landing.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("D:/cropai/frontend/src/pages/public/Landing.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFDLFFBQUcsV0FBVSwwREFBeUQsbURBQXZFO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBMEc7QUFBQSxNQUMxRyx1QkFBQyxPQUFFLFdBQVUsY0FBYSw2REFBMUI7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUF1RTtBQUFBLE1BQ3ZFLHVCQUFDLFFBQUssSUFBRyxhQUFZLFdBQVUscUNBQW1DO0FBQUE7QUFBQSxRQUM1Qyx1QkFBQyxjQUFXLFdBQVUsYUFBdEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUErQjtBQUFBLFdBRHJEO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFFQTtBQUFBLFNBTEY7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQU1BO0FBQUEsT0FuR0Y7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQW9HQTtBQUVKO0FBQUNDLEtBeEd1QlI7QUFBTyxJQUFBUTtBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJMaW5rIiwiTGVhZiIsIlNjYW5MaW5lIiwiQ2xvdWRTdW4iLCJNZXNzYWdlQ2lyY2xlIiwiU2hpZWxkQ2hlY2siLCJBcnJvd1JpZ2h0IiwiU1RFUFMiLCJ0aXRsZSIsImRlc2MiLCJGRUFUVVJFUyIsImljb24iLCJDUk9QUyIsIkxhbmRpbmciLCJtYXAiLCJzdGVwIiwiaSIsIlN0cmluZyIsInBhZFN0YXJ0IiwiZiIsImNyb3AiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJMYW5kaW5nLmpzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBMaW5rIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSdcbmltcG9ydCB7IExlYWYsIFNjYW5MaW5lLCBDbG91ZFN1biwgTWVzc2FnZUNpcmNsZSwgU2hpZWxkQ2hlY2ssIEFycm93UmlnaHQgfSBmcm9tICdsdWNpZGUtcmVhY3QnXG5cbmNvbnN0IFNURVBTID0gW1xuICB7IHRpdGxlOiAnQWRkIHlvdXIgZmFybScsIGRlc2M6ICdSZWdpc3RlciB5b3VyIGZhcm0sIGxvY2F0aW9uLCBhbmQgdGhlIGNyb3BzIHlvdSBncm93LicgfSxcbiAgeyB0aXRsZTogJ1NjYW4gYSBsZWFmJywgZGVzYzogJ1VwbG9hZCBvciBwaG90b2dyYXBoIGEgbGVhZiBmcm9tIHlvdXIgZmllbGQuJyB9LFxuICB7IHRpdGxlOiAnUnVuIHZhbGlkYXRlZCBhbmFseXNpcycsIGRlc2M6ICdUaGUgc3lzdGVtIHJlZnVzZXMgdG8gZ3Vlc3Mgd2hlbiBjb25maWRlbmNlIG9yIGltYWdlIHF1YWxpdHkgaXMgaW5zdWZmaWNpZW50LicgfSxcbiAgeyB0aXRsZTogJ1JldmlldyB0aGUgZXZpZGVuY2UnLCBkZXNjOiAnVXNlIGludGVncmF0ZWQgbWFuYWdlbWVudCBndWlkYW5jZSBvciBlc2NhbGF0ZSBhbiB1bmNlcnRhaW4gY2FzZSB0byBhIHZlcmlmaWVkIGV4cGVydC4nIH0sXG5dXG5cbmNvbnN0IEZFQVRVUkVTID0gW1xuICB7IGljb246IFNjYW5MaW5lLCB0aXRsZTogJ0d1aWRlZCBtdWx0aS1waG90byBjYXB0dXJlJywgZGVzYzogJ0Nsb3NlLXVwIGFuZCB3aG9sZS1wbGFudCB2aWV3cyBpbXByb3ZlIHF1YWxpdHkgYW5kIHByZXNlcnZlIHVuY2VydGFpbnR5LicgfSxcbiAgeyBpY29uOiBDbG91ZFN1biwgdGl0bGU6ICdFeHBsYWluYWJsZSB3ZWF0aGVyIHJpc2snLCBkZXNjOiAnQ3JvcC1saW5rZWQgd2VhdGhlciBjb25kaXRpb25zIGhlbHAgcHJpb3JpdGl6ZSBmaWVsZCBpbnNwZWN0aW9uOyByaXNrIGlzIGNsZWFybHkgbGFiZWxsZWQgaGV1cmlzdGljLicgfSxcbiAgeyBpY29uOiBNZXNzYWdlQ2lyY2xlLCB0aXRsZTogJ1RocmVlLWxhbmd1YWdlIHN1cHBvcnQnLCBkZXNjOiAnRmFybWVyIHdvcmtmbG93cyBzdXBwb3J0IE1hcmF0aGksIEhpbmRpIGFuZCBFbmdsaXNoLicgfSxcbiAgeyBpY29uOiBTaGllbGRDaGVjaywgdGl0bGU6ICdQcml2YXRlIGJ5IGRlc2lnbicsIGRlc2M6ICdJbWFnZXMgYXJlIHByaXZhdGUsIHJvbGVzIGFyZSBzZXJ2ZXItY29udHJvbGxlZCwgYW5kIGV4cGVydHMgb25seSBzZWUgYXNzaWduZWQgY2FzZXMuJyB9LFxuXVxuXG5jb25zdCBDUk9QUyA9IFsnQ290dG9uJywgJ1NveWJlYW4nLCAnU3VnYXJjYW5lJywgJ09uaW9uJywgJ1RvbWF0bycsICdQb21lZ3JhbmF0ZSddXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExhbmRpbmcoKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIHsvKiBIZXJvICovfVxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG8gcHgtNiBwdC0xNiBwYi0yMCBncmlkIG1kOmdyaWQtY29scy0yIGdhcC0xMiBpdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgPGRpdj5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSB0ZXh0LXhzIGZvbnQtbWVkaXVtIHRleHQtW3ZhcigtLXByaW1hcnkpXSBiZy1bdmFyKC0tc3VyZmFjZS1tdXRlZCldIHB4LTMgcHktMSByb3VuZGVkLWZ1bGxcIj5cbiAgICAgICAgICAgIDxMZWFmIGNsYXNzTmFtZT1cInctMy41IGgtMy41XCIgLz4gQUktcG93ZXJlZCBjcm9wIGhlYWx0aFxuICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwibXQtNSB0ZXh0LTV4bCBsZWFkaW5nLXRpZ2h0IGZvbnQtZGlzcGxheSBmb250LXNlbWlib2xkIHRleHQtW3ZhcigtLXRleHQpXVwiPlxuICAgICAgICAgICAgUHJvdGVjdCB5b3VyIGNyb3BzIHdpdGggQUkuXG4gICAgICAgICAgPC9oMT5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC01IHRleHQtbGcgbXV0ZWQgbWF4LXctbWRcIj5cbiAgICAgICAgICAgIFNlY3VyZSBkZWNpc2lvbiBzdXBwb3J0IGZvciBNYWhhcmFzaHRyYSBjcm9wIGRpc2Vhc2VzIGFuZCBwZXN0cywgd2l0aCBleHBsaWNpdFxuICAgICAgICAgICAgdW5jZXJ0YWludHkgYW5kIHZlcmlmaWVkLWV4cGVydCBlc2NhbGF0aW9uLlxuICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTggZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTRcIj5cbiAgICAgICAgICAgIDxMaW5rIHRvPVwiL3JlZ2lzdGVyXCIgY2xhc3NOYW1lPVwicHJpbWFyeS1idXR0b24gIXB4LTYgIXB5LTNcIj5cbiAgICAgICAgICAgICAgU3RhcnQgc2Nhbm5pbmcgZnJlZSA8QXJyb3dSaWdodCBjbGFzc05hbWU9XCJ3LTQgaC00XCIgLz5cbiAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgIDxMaW5rIHRvPVwiL2xvZ2luXCIgY2xhc3NOYW1lPVwibGlua1wiPlxuICAgICAgICAgICAgICBJIGFscmVhZHkgaGF2ZSBhbiBhY2NvdW50XG4gICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIHsvKiBTY2FuIGRlbW8gY2FyZCAqL31cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzdXJmYWNlIHJvdW5kZWQtM3hsIHAtNlwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm91bmRlZC0yeGwgYmctZm9yZXN0LTkwMCBhc3BlY3QtWzQvM10gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LTAgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1mb3Jlc3QtODAwIHRvLWZvcmVzdC05MDBcIiAvPlxuICAgICAgICAgICAgPFNjYW5MaW5lIGNsYXNzTmFtZT1cInctMTYgaC0xNiB0ZXh0LWZvcmVzdC0zMDAgcmVsYXRpdmUgYW5pbWF0ZS1wdWxzZVwiIC8+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGJvdHRvbS00IGxlZnQtNCByaWdodC00IGJnLWJsYWNrLzQwIGJhY2tkcm9wLWJsdXIgcm91bmRlZC14bCBweC00IHB5LTMgdGV4dC1jcmVhbSB0ZXh0LXNtXCI+XG4gICAgICAgICAgICAgIEFuYWx5emluZyBsZWFmIGltYWdl4oCmXG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTQgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuXCI+XG4gICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIG11dGVkXCI+U2FtcGxlIHJlc3VsdDwvcD5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9udC1kaXNwbGF5IHRleHQtbGcgZm9udC1zZW1pYm9sZCB0ZXh0LVt2YXIoLS10ZXh0KV1cIj5WYWxpZGF0ZWQgbW9kZWwgcmVxdWlyZWQ8L3A+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LWNsYXktNjAwXCI+Tm8gbW9jayByZXN1bHRzPC9zcGFuPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgey8qIEhvdyBpdCB3b3JrcyAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImJnLVt2YXIoLS1zdXJmYWNlLW11dGVkKV0gcHktMjBcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy03eGwgbXgtYXV0byBweC02XCI+XG4gICAgICAgICAgPGgyIGNsYXNzTmFtZT1cInRleHQtM3hsIGZvbnQtZGlzcGxheSBmb250LXNlbWlib2xkIHRleHQtW3ZhcigtLXRleHQpXSB0ZXh0LWNlbnRlclwiPkhvdyBpdCB3b3JrczwvaDI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC0xMiBncmlkIG1kOmdyaWQtY29scy00IGdhcC04XCI+XG4gICAgICAgICAgICB7U1RFUFMubWFwKChzdGVwLCBpKSA9PiAoXG4gICAgICAgICAgICAgIDxkaXYga2V5PXtzdGVwLnRpdGxlfSBjbGFzc05hbWU9XCJyZWxhdGl2ZVwiPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LVt2YXIoLS1wcmltYXJ5KV1cIj57U3RyaW5nKGkgKyAxKS5wYWRTdGFydCgyLCAnMCcpfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwibXQtMiBmb250LWRpc3BsYXkgdGV4dC1sZyBmb250LXNlbWlib2xkIHRleHQtW3ZhcigtLXRleHQpXVwiPntzdGVwLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMiB0ZXh0LXNtIG11dGVkXCI+e3N0ZXAuZGVzY308L3A+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICB7LyogRmVhdHVyZXMgKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJtYXgtdy03eGwgbXgtYXV0byBweC02IHB5LTIwXCI+XG4gICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LTN4bCBmb250LWRpc3BsYXkgZm9udC1zZW1pYm9sZCB0ZXh0LVt2YXIoLS10ZXh0KV0gdGV4dC1jZW50ZXJcIj5FdmVyeXRoaW5nIGEgZmFybSBuZWVkczwvaDI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtMTIgZ3JpZCBtZDpncmlkLWNvbHMtMiBnYXAtNlwiPlxuICAgICAgICAgIHtGRUFUVVJFUy5tYXAoKGYpID0+IChcbiAgICAgICAgICAgIDxkaXYga2V5PXtmLnRpdGxlfSBjbGFzc05hbWU9XCJzdXJmYWNlICFzaGFkb3ctbm9uZSBwLTYgZmxleCBnYXAtNFwiPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInctMTEgaC0xMSByb3VuZGVkLXhsIGJnLVt2YXIoLS1zdXJmYWNlLW11dGVkKV0gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgc2hyaW5rLTBcIj5cbiAgICAgICAgICAgICAgICA8Zi5pY29uIGNsYXNzTmFtZT1cInctNSBoLTUgdGV4dC1bdmFyKC0tcHJpbWFyeSldXCIgLz5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtZGlzcGxheSBmb250LXNlbWlib2xkIHRleHQtW3ZhcigtLXRleHQpXVwiPntmLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LXNtIG11dGVkXCI+e2YuZGVzY308L3A+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKSl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICB7LyogU3VwcG9ydGVkIGNyb3BzICovfVxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwiYmctZm9yZXN0LTkwMCBweS0xNlwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1heC13LTd4bCBteC1hdXRvIHB4LTZcIj5cbiAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwidGV4dC0yeGwgZm9udC1kaXNwbGF5IGZvbnQtc2VtaWJvbGQgdGV4dC1jcmVhbSB0ZXh0LWNlbnRlclwiPlN1cHBvcnRlZCBjcm9wczwvaDI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC04IGZsZXggZmxleC13cmFwIGp1c3RpZnktY2VudGVyIGdhcC0zXCI+XG4gICAgICAgICAgICB7Q1JPUFMubWFwKChjcm9wKSA9PiAoXG4gICAgICAgICAgICAgIDxzcGFuIGtleT17Y3JvcH0gY2xhc3NOYW1lPVwicHgtNCBweS0yIHJvdW5kZWQtZnVsbCBiZy1mb3Jlc3QtODAwIHRleHQtZm9yZXN0LTEwMCB0ZXh0LXNtXCI+XG4gICAgICAgICAgICAgICAge2Nyb3B9XG4gICAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtY2VudGVyIHRleHQtZm9yZXN0LTQwMCB0ZXh0LXhzIG10LTZcIj5OZXcgY3JvcHMgYXJlIHJlbGVhc2VkIG9ubHkgYWZ0ZXIgZGF0YXNldCBhbmQgZmllbGQtdmFsaWRhdGlvbiBnYXRlcyBwYXNzLjwvcD5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBDVEEgKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJtYXgtdy00eGwgbXgtYXV0byBweC02IHB5LTI0IHRleHQtY2VudGVyXCI+XG4gICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LTN4bCBmb250LWRpc3BsYXkgZm9udC1zZW1pYm9sZCB0ZXh0LVt2YXIoLS10ZXh0KV1cIj5TdGFydCBwcm90ZWN0aW5nIHlvdXIgaGFydmVzdCB0b2RheTwvaDI+XG4gICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTMgbXV0ZWRcIj5GcmVlIHRvIGdldCBzdGFydGVkLiBObyBjcmVkaXQgY2FyZCByZXF1aXJlZC48L3A+XG4gICAgICAgIDxMaW5rIHRvPVwiL3JlZ2lzdGVyXCIgY2xhc3NOYW1lPVwicHJpbWFyeS1idXR0b24gbXQtOCAhcHgtNyAhcHktMy41XCI+XG4gICAgICAgICAgQ3JlYXRlIHlvdXIgYWNjb3VudCA8QXJyb3dSaWdodCBjbGFzc05hbWU9XCJ3LTQgaC00XCIgLz5cbiAgICAgICAgPC9MaW5rPlxuICAgICAgPC9zZWN0aW9uPlxuICAgIDwvZGl2PlxuICApXG59XG4iXSwiZmlsZSI6IkQ6L2Nyb3BhaS9mcm9udGVuZC9zcmMvcGFnZXMvcHVibGljL0xhbmRpbmcuanN4In0=

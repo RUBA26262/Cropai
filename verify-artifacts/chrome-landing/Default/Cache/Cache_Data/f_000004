@@ -1,0 +1,254 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/App.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8e4b4601"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("D:/cropai/frontend/src/App.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=8e4b4601"; const lazy = __vite__cjsImport3_react["lazy"]; const Suspense = __vite__cjsImport3_react["Suspense"];
+import { Navigate, Routes, Route } from "/node_modules/.vite/deps/react-router-dom.js?v=8e4b4601";
+import PublicLayout from "/src/layouts/PublicLayout.jsx?t=1788181345103";
+import AppLayout from "/src/layouts/AppLayout.jsx?t=1788181345103";
+import ProtectedRoute from "/src/components/ProtectedRoute.jsx";
+import RoleRoute from "/src/components/RoleRoute.jsx";
+const Landing = lazy(_c = () => import("/src/pages/public/Landing.jsx"));
+_c2 = Landing;
+const Login = lazy(_c3 = () => import("/src/pages/public/Login.jsx"));
+_c4 = Login;
+const Register = lazy(_c5 = () => import("/src/pages/public/Register.jsx"));
+_c6 = Register;
+const VerifyEmail = lazy(_c7 = () => import("/src/pages/public/VerifyEmail.jsx"));
+_c8 = VerifyEmail;
+const Dashboard = lazy(_c9 = () => import("/src/pages/farmer/Dashboard.jsx"));
+_c0 = Dashboard;
+const Farms = lazy(_c1 = () => import("/src/pages/farmer/Farms.jsx"));
+_c10 = Farms;
+const Scan = lazy(_c11 = () => import("/src/pages/farmer/Scan.jsx?t=1788181386831"));
+_c12 = Scan;
+const History = lazy(_c13 = () => import("/src/pages/farmer/History.jsx"));
+_c14 = History;
+const Alerts = lazy(_c15 = () => import("/src/pages/farmer/Alerts.jsx"));
+_c16 = Alerts;
+const Settings = lazy(_c17 = () => import("/src/pages/farmer/Settings.jsx"));
+_c18 = Settings;
+const ExpertQueue = lazy(_c19 = () => import("/src/pages/expert/ExpertQueue.jsx"));
+_c20 = ExpertQueue;
+const AdminDashboard = lazy(_c21 = () => import("/src/pages/admin/AdminDashboard.jsx"));
+_c22 = AdminDashboard;
+export default function App() {
+  return /* @__PURE__ */ jsxDEV(Suspense, { fallback: /* @__PURE__ */ jsxDEV("div", { className: "min-h-[50vh] grid place-items-center muted", children: "Loading…" }, void 0, false, {
+    fileName: "D:/cropai/frontend/src/App.jsx",
+    lineNumber: 43,
+    columnNumber: 25
+  }, this), children: /* @__PURE__ */ jsxDEV(Routes, { children: [
+    /* @__PURE__ */ jsxDEV(Route, { element: /* @__PURE__ */ jsxDEV(PublicLayout, {}, void 0, false, {
+      fileName: "D:/cropai/frontend/src/App.jsx",
+      lineNumber: 44,
+      columnNumber: 23
+    }, this), children: [
+      /* @__PURE__ */ jsxDEV(Route, { path: "/", element: /* @__PURE__ */ jsxDEV(Landing, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 45,
+        columnNumber: 34
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 45,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/login", element: /* @__PURE__ */ jsxDEV(Login, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 46,
+        columnNumber: 39
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 46,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/register", element: /* @__PURE__ */ jsxDEV(Register, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 47,
+        columnNumber: 42
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 47,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/verify-email", element: /* @__PURE__ */ jsxDEV(VerifyEmail, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 48,
+        columnNumber: 46
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 48,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/App.jsx",
+      lineNumber: 44,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { element: /* @__PURE__ */ jsxDEV(ProtectedRoute, { children: /* @__PURE__ */ jsxDEV(AppLayout, {}, void 0, false, {
+      fileName: "D:/cropai/frontend/src/App.jsx",
+      lineNumber: 51,
+      columnNumber: 39
+    }, this) }, void 0, false, {
+      fileName: "D:/cropai/frontend/src/App.jsx",
+      lineNumber: 51,
+      columnNumber: 23
+    }, this), children: [
+      /* @__PURE__ */ jsxDEV(Route, { path: "/dashboard", element: /* @__PURE__ */ jsxDEV(Dashboard, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 52,
+        columnNumber: 43
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 52,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/farms", element: /* @__PURE__ */ jsxDEV(Farms, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 53,
+        columnNumber: 39
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 53,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/scan", element: /* @__PURE__ */ jsxDEV(Scan, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 54,
+        columnNumber: 38
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 54,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/history", element: /* @__PURE__ */ jsxDEV(History, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 55,
+        columnNumber: 41
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 55,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/alerts", element: /* @__PURE__ */ jsxDEV(Alerts, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 56,
+        columnNumber: 40
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 56,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/settings", element: /* @__PURE__ */ jsxDEV(Settings, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 57,
+        columnNumber: 42
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 57,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/expert", element: /* @__PURE__ */ jsxDEV(RoleRoute, { roles: ["expert"], children: /* @__PURE__ */ jsxDEV(ExpertQueue, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 58,
+        columnNumber: 70
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 58,
+        columnNumber: 40
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 58,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "/admin", element: /* @__PURE__ */ jsxDEV(RoleRoute, { roles: ["admin"], children: /* @__PURE__ */ jsxDEV(AdminDashboard, {}, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 59,
+        columnNumber: 68
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 59,
+        columnNumber: 39
+      }, this) }, void 0, false, {
+        fileName: "D:/cropai/frontend/src/App.jsx",
+        lineNumber: 59,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/cropai/frontend/src/App.jsx",
+      lineNumber: 51,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "*", element: /* @__PURE__ */ jsxDEV(Navigate, { to: "/", replace: true }, void 0, false, {
+      fileName: "D:/cropai/frontend/src/App.jsx",
+      lineNumber: 61,
+      columnNumber: 32
+    }, this) }, void 0, false, {
+      fileName: "D:/cropai/frontend/src/App.jsx",
+      lineNumber: 61,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "D:/cropai/frontend/src/App.jsx",
+    lineNumber: 43,
+    columnNumber: 101
+  }, this) }, void 0, false, {
+    fileName: "D:/cropai/frontend/src/App.jsx",
+    lineNumber: 43,
+    columnNumber: 5
+  }, this);
+}
+_c23 = App;
+var _c, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c0, _c1, _c10, _c11, _c12, _c13, _c14, _c15, _c16, _c17, _c18, _c19, _c20, _c21, _c22, _c23;
+$RefreshReg$(_c, "Landing$lazy");
+$RefreshReg$(_c2, "Landing");
+$RefreshReg$(_c3, "Login$lazy");
+$RefreshReg$(_c4, "Login");
+$RefreshReg$(_c5, "Register$lazy");
+$RefreshReg$(_c6, "Register");
+$RefreshReg$(_c7, "VerifyEmail$lazy");
+$RefreshReg$(_c8, "VerifyEmail");
+$RefreshReg$(_c9, "Dashboard$lazy");
+$RefreshReg$(_c0, "Dashboard");
+$RefreshReg$(_c1, "Farms$lazy");
+$RefreshReg$(_c10, "Farms");
+$RefreshReg$(_c11, "Scan$lazy");
+$RefreshReg$(_c12, "Scan");
+$RefreshReg$(_c13, "History$lazy");
+$RefreshReg$(_c14, "History");
+$RefreshReg$(_c15, "Alerts$lazy");
+$RefreshReg$(_c16, "Alerts");
+$RefreshReg$(_c17, "Settings$lazy");
+$RefreshReg$(_c18, "Settings");
+$RefreshReg$(_c19, "ExpertQueue$lazy");
+$RefreshReg$(_c20, "ExpertQueue");
+$RefreshReg$(_c21, "AdminDashboard$lazy");
+$RefreshReg$(_c22, "AdminDashboard");
+$RefreshReg$(_c23, "App");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("D:/cropai/frontend/src/App.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("D:/cropai/frontend/src/App.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFBLFdBU0E7QUFBQSxJQUNBLHVCQUFDLFNBQU0sTUFBSyxLQUFJLFNBQVMsdUJBQUMsWUFBUyxJQUFHLEtBQUksU0FBTyxRQUF4QjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBQXdCLEtBQWpEO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FBcUQ7QUFBQSxPQWxCeUM7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQW1CaEcsS0FuQkE7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQW1CUztBQUViO0FBQUNDLE9BdkJ1QkQ7QUFBRyxJQUFBbkMsSUFBQUMsS0FBQUUsS0FBQUMsS0FBQUUsS0FBQUMsS0FBQUUsS0FBQUMsS0FBQUUsS0FBQUMsS0FBQUUsS0FBQUMsTUFBQUUsTUFBQUMsTUFBQUUsTUFBQUMsTUFBQUUsTUFBQUMsTUFBQUUsTUFBQUMsTUFBQUUsTUFBQUMsTUFBQUUsTUFBQUMsTUFBQUU7QUFBQSxhQUFBcEMsSUFBQTtBQUFBLGFBQUFDLEtBQUE7QUFBQSxhQUFBRSxLQUFBO0FBQUEsYUFBQUMsS0FBQTtBQUFBLGFBQUFFLEtBQUE7QUFBQSxhQUFBQyxLQUFBO0FBQUEsYUFBQUUsS0FBQTtBQUFBLGFBQUFDLEtBQUE7QUFBQSxhQUFBRSxLQUFBO0FBQUEsYUFBQUMsS0FBQTtBQUFBLGFBQUFFLEtBQUE7QUFBQSxhQUFBQyxNQUFBO0FBQUEsYUFBQUUsTUFBQTtBQUFBLGFBQUFDLE1BQUE7QUFBQSxhQUFBRSxNQUFBO0FBQUEsYUFBQUMsTUFBQTtBQUFBLGFBQUFFLE1BQUE7QUFBQSxhQUFBQyxNQUFBO0FBQUEsYUFBQUUsTUFBQTtBQUFBLGFBQUFDLE1BQUE7QUFBQSxhQUFBRSxNQUFBO0FBQUEsYUFBQUMsTUFBQTtBQUFBLGFBQUFFLE1BQUE7QUFBQSxhQUFBQyxNQUFBO0FBQUEsYUFBQUUsTUFBQSIsIm5hbWVzIjpbImxhenkiLCJTdXNwZW5zZSIsIk5hdmlnYXRlIiwiUm91dGVzIiwiUm91dGUiLCJQdWJsaWNMYXlvdXQiLCJBcHBMYXlvdXQiLCJQcm90ZWN0ZWRSb3V0ZSIsIlJvbGVSb3V0ZSIsIkxhbmRpbmciLCJfYyIsIl9jMiIsIkxvZ2luIiwiX2MzIiwiX2M0IiwiUmVnaXN0ZXIiLCJfYzUiLCJfYzYiLCJWZXJpZnlFbWFpbCIsIl9jNyIsIl9jOCIsIkRhc2hib2FyZCIsIl9jOSIsIl9jMCIsIkZhcm1zIiwiX2MxIiwiX2MxMCIsIlNjYW4iLCJfYzExIiwiX2MxMiIsIkhpc3RvcnkiLCJfYzEzIiwiX2MxNCIsIkFsZXJ0cyIsIl9jMTUiLCJfYzE2IiwiU2V0dGluZ3MiLCJfYzE3IiwiX2MxOCIsIkV4cGVydFF1ZXVlIiwiX2MxOSIsIl9jMjAiLCJBZG1pbkRhc2hib2FyZCIsIl9jMjEiLCJfYzIyIiwiQXBwIiwiX2MyMyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBcHAuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGxhenksIFN1c3BlbnNlIH0gZnJvbSAncmVhY3QnXG5pbXBvcnQgeyBOYXZpZ2F0ZSwgUm91dGVzLCBSb3V0ZSB9IGZyb20gJ3JlYWN0LXJvdXRlci1kb20nXG5pbXBvcnQgUHVibGljTGF5b3V0IGZyb20gJy4vbGF5b3V0cy9QdWJsaWNMYXlvdXQnXG5pbXBvcnQgQXBwTGF5b3V0IGZyb20gJy4vbGF5b3V0cy9BcHBMYXlvdXQnXG5pbXBvcnQgUHJvdGVjdGVkUm91dGUgZnJvbSAnLi9jb21wb25lbnRzL1Byb3RlY3RlZFJvdXRlJ1xuXG5pbXBvcnQgUm9sZVJvdXRlIGZyb20gJy4vY29tcG9uZW50cy9Sb2xlUm91dGUnXG5cbmNvbnN0IExhbmRpbmcgPSBsYXp5KCgpID0+IGltcG9ydCgnLi9wYWdlcy9wdWJsaWMvTGFuZGluZycpKVxuY29uc3QgTG9naW4gPSBsYXp5KCgpID0+IGltcG9ydCgnLi9wYWdlcy9wdWJsaWMvTG9naW4nKSlcbmNvbnN0IFJlZ2lzdGVyID0gbGF6eSgoKSA9PiBpbXBvcnQoJy4vcGFnZXMvcHVibGljL1JlZ2lzdGVyJykpXG5jb25zdCBWZXJpZnlFbWFpbCA9IGxhenkoKCkgPT4gaW1wb3J0KCcuL3BhZ2VzL3B1YmxpYy9WZXJpZnlFbWFpbCcpKVxuY29uc3QgRGFzaGJvYXJkID0gbGF6eSgoKSA9PiBpbXBvcnQoJy4vcGFnZXMvZmFybWVyL0Rhc2hib2FyZCcpKVxuY29uc3QgRmFybXMgPSBsYXp5KCgpID0+IGltcG9ydCgnLi9wYWdlcy9mYXJtZXIvRmFybXMnKSlcbmNvbnN0IFNjYW4gPSBsYXp5KCgpID0+IGltcG9ydCgnLi9wYWdlcy9mYXJtZXIvU2NhbicpKVxuY29uc3QgSGlzdG9yeSA9IGxhenkoKCkgPT4gaW1wb3J0KCcuL3BhZ2VzL2Zhcm1lci9IaXN0b3J5JykpXG5jb25zdCBBbGVydHMgPSBsYXp5KCgpID0+IGltcG9ydCgnLi9wYWdlcy9mYXJtZXIvQWxlcnRzJykpXG5jb25zdCBTZXR0aW5ncyA9IGxhenkoKCkgPT4gaW1wb3J0KCcuL3BhZ2VzL2Zhcm1lci9TZXR0aW5ncycpKVxuY29uc3QgRXhwZXJ0UXVldWUgPSBsYXp5KCgpID0+IGltcG9ydCgnLi9wYWdlcy9leHBlcnQvRXhwZXJ0UXVldWUnKSlcbmNvbnN0IEFkbWluRGFzaGJvYXJkID0gbGF6eSgoKSA9PiBpbXBvcnQoJy4vcGFnZXMvYWRtaW4vQWRtaW5EYXNoYm9hcmQnKSlcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXBwKCkge1xuICByZXR1cm4gKFxuICAgIDxTdXNwZW5zZSBmYWxsYmFjaz17PGRpdiBjbGFzc05hbWU9XCJtaW4taC1bNTB2aF0gZ3JpZCBwbGFjZS1pdGVtcy1jZW50ZXIgbXV0ZWRcIj5Mb2FkaW5n4oCmPC9kaXY+fT48Um91dGVzPlxuICAgICAgPFJvdXRlIGVsZW1lbnQ9ezxQdWJsaWNMYXlvdXQgLz59PlxuICAgICAgICA8Um91dGUgcGF0aD1cIi9cIiBlbGVtZW50PXs8TGFuZGluZyAvPn0gLz5cbiAgICAgICAgPFJvdXRlIHBhdGg9XCIvbG9naW5cIiBlbGVtZW50PXs8TG9naW4gLz59IC8+XG4gICAgICAgIDxSb3V0ZSBwYXRoPVwiL3JlZ2lzdGVyXCIgZWxlbWVudD17PFJlZ2lzdGVyIC8+fSAvPlxuICAgICAgICA8Um91dGUgcGF0aD1cIi92ZXJpZnktZW1haWxcIiBlbGVtZW50PXs8VmVyaWZ5RW1haWwgLz59IC8+XG4gICAgICA8L1JvdXRlPlxuXG4gICAgICA8Um91dGUgZWxlbWVudD17PFByb3RlY3RlZFJvdXRlPjxBcHBMYXlvdXQgLz48L1Byb3RlY3RlZFJvdXRlPn0+XG4gICAgICAgIDxSb3V0ZSBwYXRoPVwiL2Rhc2hib2FyZFwiIGVsZW1lbnQ9ezxEYXNoYm9hcmQgLz59IC8+XG4gICAgICAgIDxSb3V0ZSBwYXRoPVwiL2Zhcm1zXCIgZWxlbWVudD17PEZhcm1zIC8+fSAvPlxuICAgICAgICA8Um91dGUgcGF0aD1cIi9zY2FuXCIgZWxlbWVudD17PFNjYW4gLz59IC8+XG4gICAgICAgIDxSb3V0ZSBwYXRoPVwiL2hpc3RvcnlcIiBlbGVtZW50PXs8SGlzdG9yeSAvPn0gLz5cbiAgICAgICAgPFJvdXRlIHBhdGg9XCIvYWxlcnRzXCIgZWxlbWVudD17PEFsZXJ0cyAvPn0gLz5cbiAgICAgICAgPFJvdXRlIHBhdGg9XCIvc2V0dGluZ3NcIiBlbGVtZW50PXs8U2V0dGluZ3MgLz59IC8+XG4gICAgICAgIDxSb3V0ZSBwYXRoPVwiL2V4cGVydFwiIGVsZW1lbnQ9ezxSb2xlUm91dGUgcm9sZXM9e1snZXhwZXJ0J119PjxFeHBlcnRRdWV1ZSAvPjwvUm9sZVJvdXRlPn0gLz5cbiAgICAgICAgPFJvdXRlIHBhdGg9XCIvYWRtaW5cIiBlbGVtZW50PXs8Um9sZVJvdXRlIHJvbGVzPXtbJ2FkbWluJ119PjxBZG1pbkRhc2hib2FyZCAvPjwvUm9sZVJvdXRlPn0gLz5cbiAgICAgIDwvUm91dGU+XG4gICAgICA8Um91dGUgcGF0aD1cIipcIiBlbGVtZW50PXs8TmF2aWdhdGUgdG89XCIvXCIgcmVwbGFjZSAvPn0gLz5cbiAgICA8L1JvdXRlcz48L1N1c3BlbnNlPlxuICApXG59XG4iXSwiZmlsZSI6IkQ6L2Nyb3BhaS9mcm9udGVuZC9zcmMvQXBwLmpzeCJ9

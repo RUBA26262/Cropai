@@ -1,0 +1,1 @@
+"""CropAI private inference service."""

@@ -1,0 +1,109 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "opening title",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "shapeId": "sh/fu94fe98", "purpose": "CropAI title" },
+        { "action": "rewrite", "shapeId": "sh/7qp4be9c", "purpose": "CropAI subtitle" },
+        { "action": "rewrite", "shapeId": "sh/wn6dc7eh", "purpose": "CropAI problem and team details" }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 2,
+      "narrativeRole": "challenge content",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "shapeId": "sh/dkvmpszm", "purpose": "CropAI slide title" },
+        { "action": "delete", "shapeId": "sh/qx4nud0b", "purpose": "Remove template prompt body" },
+        { "action": "rewrite", "shapeId": "sh/ove9o7yd", "purpose": "Team name" },
+        { "action": "fill-placeholder", "shapeId": "sh/x4r21kru", "purpose": "Slide number" },
+        { "action": "fill-placeholder", "shapeId": "sh/w3i1sfa9", "purpose": "Footer" },
+        { "action": "replace", "shapeId": "im/upc369ob", "purpose": "Restore authentic SIH logo above edited title layer" },
+        { "action": "add", "newPrimitiveAllowed": true, "mustNotOverlapInherited": true, "zone": { "left": 0, "top": 120, "width": 1280, "height": 547 }, "reason": "Place an exact raster capture of the CropAI slide body inside the cleared SIH content region." }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 3,
+      "narrativeRole": "solution content",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "shapeId": "sh/j6dgf6tk", "purpose": "CropAI slide title" },
+        { "action": "delete", "shapeId": "sh/1k3214v2", "purpose": "Remove template prompt body" },
+        { "action": "rewrite", "shapeId": "sh/m1c3mlsn", "purpose": "Team name" },
+        { "action": "fill-placeholder", "shapeId": "sh/obq90bml", "purpose": "Slide number" },
+        { "action": "fill-placeholder", "shapeId": "sh/pcjqtg36", "purpose": "Footer" },
+        { "action": "replace", "shapeId": "im/hsf6d4ji", "purpose": "Restore authentic SIH logo above edited title layer" },
+        { "action": "add", "newPrimitiveAllowed": true, "mustNotOverlapInherited": true, "zone": { "left": 0, "top": 120, "width": 1280, "height": 547 }, "reason": "Place an exact raster capture of the CropAI slide body inside the cleared SIH content region." }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 3,
+      "narrativeRole": "workflow content",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "shapeId": "sh/j6dgf6tk", "purpose": "CropAI slide title" },
+        { "action": "delete", "shapeId": "sh/1k3214v2", "purpose": "Remove template prompt body" },
+        { "action": "rewrite", "shapeId": "sh/m1c3mlsn", "purpose": "Team name" },
+        { "action": "fill-placeholder", "shapeId": "sh/obq90bml", "purpose": "Slide number" },
+        { "action": "fill-placeholder", "shapeId": "sh/pcjqtg36", "purpose": "Footer" },
+        { "action": "replace", "shapeId": "im/hsf6d4ji", "purpose": "Restore authentic SIH logo above edited title layer" },
+        { "action": "add", "newPrimitiveAllowed": true, "mustNotOverlapInherited": true, "zone": { "left": 0, "top": 120, "width": 1280, "height": 547 }, "reason": "Place an exact raster capture of the CropAI slide body inside the cleared SIH content region." }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 5,
+      "narrativeRole": "differentiation content",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "shapeId": "sh/y1g7ylcj", "purpose": "CropAI slide title" },
+        { "action": "delete", "shapeId": "sh/g7alsnu1", "purpose": "Remove template prompt body" },
+        { "action": "rewrite", "shapeId": "sh/ahkvi1cb", "purpose": "Team name" },
+        { "action": "fill-placeholder", "shapeId": "sh/l4bupwny", "purpose": "Slide number" },
+        { "action": "fill-placeholder", "shapeId": "sh/032tgr6d", "purpose": "Footer" },
+        { "action": "replace", "shapeId": "im/w7uxkbq5", "purpose": "Restore authentic SIH logo above edited title layer" },
+        { "action": "add", "newPrimitiveAllowed": true, "mustNotOverlapInherited": true, "zone": { "left": 0, "top": 120, "width": 1280, "height": 547 }, "reason": "Place an exact raster capture of the CropAI slide body inside the cleared SIH content region." }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 4,
+      "narrativeRole": "feasibility content",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "shapeId": "sh/ud8fyt4z", "purpose": "CropAI slide title" },
+        { "action": "delete", "shapeId": "sh/sjad83id", "purpose": "Remove template prompt body" },
+        { "action": "rewrite", "shapeId": "sh/i94r6xgz", "purpose": "Team name" },
+        { "action": "fill-placeholder", "shapeId": "sh/doj29oba", "purpose": "Slide number" },
+        { "action": "fill-placeholder", "shapeId": "sh/sna103ap", "purpose": "Footer" },
+        { "action": "replace", "shapeId": "im/43m1wbqd", "purpose": "Restore authentic SIH logo above edited title layer" },
+        { "action": "add", "newPrimitiveAllowed": true, "mustNotOverlapInherited": true, "zone": { "left": 0, "top": 120, "width": 1280, "height": 547 }, "reason": "Place an exact raster capture of the CropAI slide body inside the cleared SIH content region." }
+      ]
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 5,
+      "narrativeRole": "outcomes content",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "shapeId": "sh/y1g7ylcj", "purpose": "CropAI slide title" },
+        { "action": "delete", "shapeId": "sh/g7alsnu1", "purpose": "Remove template prompt body" },
+        { "action": "rewrite", "shapeId": "sh/ahkvi1cb", "purpose": "Team name" },
+        { "action": "fill-placeholder", "shapeId": "sh/l4bupwny", "purpose": "Slide number" },
+        { "action": "fill-placeholder", "shapeId": "sh/032tgr6d", "purpose": "Footer" },
+        { "action": "replace", "shapeId": "im/w7uxkbq5", "purpose": "Restore authentic SIH logo above edited title layer" },
+        { "action": "add", "newPrimitiveAllowed": true, "mustNotOverlapInherited": true, "zone": { "left": 0, "top": 120, "width": 1280, "height": 547 }, "reason": "Place an exact raster capture of the CropAI slide body inside the cleared SIH content region." }
+      ]
+    }
+  ],
+  "omittedSourceSlides": [
+    { "sourceSlide": 6, "reason": "Research frame is not required to preserve the seven-slide CropAI sequence." },
+    { "sourceSlide": 7, "reason": "Instruction slide intentionally ignored per the user's request." }
+  ]
+}

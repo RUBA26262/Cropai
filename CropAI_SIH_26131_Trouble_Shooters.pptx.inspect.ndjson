@@ -1,0 +1,215 @@
+{"kind":"deck","id":"pr/mu2htc","name":"Deck"}
+{"kind":"layout","layoutId":"2fc7a637-8ff4-48c5-8631-797490b5b282","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"46615d26-fc21-4f2a-85d6-0b80540a66d4","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ed011s","slide":1,"title":"SMART INDIA HACKATHON","textShapes":6}
+{"kind":"textbox","id":"sh/0vi5or6t","slide":1,"text":"SMART INDIA HACKATHON","textPreview":"SMART INDIA HACKATHON","textChars":21,"textLines":1,"bbox":[72,54,560,28]}
+{"kind":"textbox","id":"sh/zu94v658","slide":1,"text":"CropAI","textPreview":"CropAI","textChars":6,"textLines":1,"bbox":[72,164,560,92]}
+{"kind":"textbox","id":"sh/e90nm1on","slide":1,"text":"Detect earlier. Act safely.\nEscalate intelligently.","textPreview":"Detect earlier. Act safely. | Escalate intelligently.","textChars":51,"textLines":2,"bbox":[72,260,640,112]}
+{"kind":"shape","id":"sh/d8rmtwni","slide":1,"bbox":[72,410,520,4]}
+{"kind":"textbox","id":"sh/c7i5kr6x","slide":1,"text":"Early detection and management of crop diseases and pest infestations","textPreview":"Early detection and management of crop diseases and pest infestations","textChars":69,"textLines":1,"bbox":[72,438,680,70]}
+{"kind":"textbox","id":"sh/r6p4rm5c","slide":1,"text":"Problem Statement 26131  |  Software\nGovernment of Maharashtra  |  Agriculture, FoodTech & Rural Development","textPreview":"Problem Statement 26131  |  Software | Government of Maharashtra  |  Agriculture, FoodTech & Rural Development","textChars":108,"textLines":2,"bbox":[72,548,780,58]}
+{"kind":"textbox","id":"sh/q5g3ihor","slide":1,"text":"TROUBLE\nSHOOTERS","textPreview":"TROUBLE | SHOOTERS","textChars":16,"textLines":2,"bbox":[990,526,218,82]}
+{"kind":"notes","id":"nt/ed011s","slide":1,"text":"Open with the farmer outcome: earlier recognition, safer action, and expert escalation.\nDo not begin with the technology stack.\n\n[Sources]\nSIH problem statement details supplied by the team."}
+{"kind":"slide","id":"sl/yi1ix6","slide":2,"title":"THE CHALLENGE","textShapes":21}
+{"kind":"textbox","id":"sh/8jyd4v6p","slide":2,"text":"THE CHALLENGE","textPreview":"THE CHALLENGE","textChars":13,"textLines":1,"bbox":[64,38,700,24]}
+{"kind":"textbox","id":"sh/7ipcbq54","slide":2,"text":"The dangerous gap is between first symptom and trusted action","textPreview":"The dangerous gap is between first symptom and trusted action","textChars":61,"textLines":1,"bbox":[64,72,1110,66]}
+{"kind":"textbox","id":"sh/6xgv2loj","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,42,40,24]}
+{"kind":"shape","id":"sh/horeh0n6","slide":2,"bbox":[64,146,1152,2]}
+{"kind":"textbox","id":"sh/gnid8v6l","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,190,80,60]}
+{"kind":"textbox","id":"sh/vmpcfa50","slide":2,"text":"Symptoms begin quietly","textPreview":"Symptoms begin quietly","textChars":22,"textLines":1,"bbox":[154,188,470,40]}
+{"kind":"textbox","id":"sh/ulgv65of","slide":2,"text":"Farmers often act only after visible damage has spread across the plot.","textPreview":"Farmers often act only after visible damage has spread across the plot.","textChars":71,"textLines":1,"bbox":[154,232,460,64]}
+{"kind":"textbox","id":"sh/psrelkn2","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[64,330,80,60]}
+{"kind":"textbox","id":"sh/4ridcf6h","slide":2,"text":"Expert capacity is stretched","textPreview":"Expert capacity is stretched","textChars":28,"textLines":1,"bbox":[154,328,470,40]}
+{"kind":"textbox","id":"sh/a14zy94n","slide":2,"text":"Extension workers cover large areas; laboratory confirmation takes time.","textPreview":"Extension workers cover large areas; laboratory confirmation takes time.","textChars":72,"textLines":1,"bbox":[154,372,460,64]}
+{"kind":"textbox","id":"sh/b2dg7e58","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[64,470,80,60]}
+{"kind":"textbox","id":"sh/c3mh0jmt","slide":2,"text":"A wrong answer can worsen loss","textPreview":"A wrong answer can worsen loss","textChars":30,"textLines":1,"bbox":[154,468,470,40]}
+{"kind":"textbox","id":"sh/x4vy9ony","slide":2,"text":"Similar symptoms may come from disease, pests, nutrients, water or weather.","textPreview":"Similar symptoms may come from disease, pests, nutrients, water or weather.","textChars":75,"textLines":1,"bbox":[154,512,470,64]}
+{"kind":"shape","id":"sh/y54z2t4j","slide":2,"bbox":[710,188,470,390]}
+{"kind":"textbox","id":"sh/z6d0by54","slide":2,"text":"What farmers need","textPreview":"What farmers need","textChars":17,"textLines":1,"bbox":[752,226,390,36]}
+{"kind":"textbox","id":"sh/k7mh43mp","slide":2,"text":"EARLY","textPreview":"EARLY","textChars":5,"textLines":1,"bbox":[752,292,180,44]}
+{"kind":"textbox","id":"sh/l8vid8na","slide":2,"text":"recognition","textPreview":"recognition","textChars":11,"textLines":1,"bbox":[934,296,180,36]}
+{"kind":"textbox","id":"sh/e90zqp4f","slide":2,"text":"SAFE","textPreview":"SAFE","textChars":4,"textLines":1,"bbox":[752,372,180,44]}
+{"kind":"textbox","id":"sh/fatgzu50","slide":2,"text":"next action","textPreview":"next action","textChars":11,"textLines":1,"bbox":[934,376,180,36]}
+{"kind":"textbox","id":"sh/jepw7qls","slide":2,"text":"HUMAN","textPreview":"HUMAN","textChars":5,"textLines":1,"bbox":[752,452,180,44]}
+{"kind":"textbox","id":"sh/idgvylk7","slide":2,"text":"backup when AI is unsure","textPreview":"backup when AI is unsure","textChars":24,"textLines":1,"bbox":[934,448,190,62]}
+{"kind":"textbox","id":"sh/5g7e903i","slide":2,"text":"TROUBLE SHOOTERS  •  SIH 26131","textPreview":"TROUBLE SHOOTERS  •  SIH 26131","textChars":30,"textLines":1,"bbox":[64,676,440,18]}
+{"kind":"textbox","id":"sh/4fyd0v2d","slide":2,"text":"CropAI Maharashtra","textPreview":"CropAI Maharashtra","textChars":18,"textLines":1,"bbox":[1010,676,206,18]}
+{"kind":"notes","id":"nt/yi1ix6","slide":2,"text":"Frame the problem as a decision-delay problem, not only an image-classification problem.\n\n[Sources]\nProblem description supplied by Government of Maharashtra / team brief."}
+{"kind":"slide","id":"sl/qdqoux","slide":3,"title":"OUR SOLUTION","textShapes":19}
+{"kind":"textbox","id":"sh/69k36d87","slide":3,"text":"OUR SOLUTION","textPreview":"OUR SOLUTION","textChars":12,"textLines":1,"bbox":[64,38,700,24]}
+{"kind":"textbox","id":"sh/tcb2hsry","slide":3,"text":"CropAI closes the loop from field evidence to verified guidance","textPreview":"CropAI closes the loop from field evidence to verified guidance","textChars":63,"textLines":1,"bbox":[64,72,1110,66]}
+{"kind":"textbox","id":"sh/sb2l8nqd","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,42,40,24]}
+{"kind":"shape","id":"sh/jmtkby9g","slide":3,"bbox":[64,146,1152,2]}
+{"kind":"textbox","id":"sh/5ob2d8rm","slide":3,"text":"A working Firebase PWA—not a concept mock-up","textPreview":"A working Firebase PWA—not a concept mock-up","textChars":44,"textLines":1,"bbox":[794,184,400,62]}
+{"kind":"textbox","id":"sh/4n2l43q1","slide":3,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[794,266,28,28]}
+{"kind":"textbox","id":"sh/vi9k7y9k","slide":3,"text":"Guided close-up + whole-plant capture","textPreview":"Guided close-up + whole-plant capture","textChars":37,"textLines":1,"bbox":[832,262,355,38]}
+{"kind":"textbox","id":"sh/uh0jytsz","slide":3,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[794,315,28,28]}
+{"kind":"textbox","id":"sh/knmx8r25","slide":3,"text":"Crop, farm, soil, irrigation & symptoms","textPreview":"Crop, farm, soil, irrigation & symptoms","textChars":39,"textLines":1,"bbox":[832,311,355,38]}
+{"kind":"textbox","id":"sh/love1wjq","slide":3,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[794,364,28,28]}
+{"kind":"textbox","id":"sh/yl4f61kz","slide":3,"text":"Marathi / Hindi / English + voice input","textPreview":"Marathi / Hindi / English + voice input","textChars":39,"textLines":1,"bbox":[832,360,355,38]}
+{"kind":"textbox","id":"sh/jmdwz61k","slide":3,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[794,413,28,28]}
+{"kind":"textbox","id":"sh/cj2x4r29","slide":3,"text":"Confidence gate: diagnose or safely abstain","textPreview":"Confidence gate: diagnose or safely abstain","textChars":43,"textLines":1,"bbox":[832,409,355,38]}
+{"kind":"textbox","id":"sh/xkbexwju","slide":3,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[794,462,28,28]}
+{"kind":"textbox","id":"sh/axkv2hk3","slide":3,"text":"Expert review and private farmer alerts","textPreview":"Expert review and private farmer alerts","textChars":39,"textLines":1,"bbox":[832,458,355,38]}
+{"kind":"textbox","id":"sh/bitwvm1o","slide":3,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[794,511,28,28]}
+{"kind":"textbox","id":"sh/gf6xgb2d","slide":3,"text":"Offline draft queue for weak connectivity","textPreview":"Offline draft queue for weak connectivity","textChars":41,"textLines":1,"bbox":[832,507,355,38]}
+{"kind":"shape","id":"sh/hgfy9gjy","slide":3,"bbox":[794,570,400,54]}
+{"kind":"textbox","id":"sh/pcbetgb2","slide":3,"text":"Prototype ready for live demonstration","textPreview":"Prototype ready for live demonstration","textChars":38,"textLines":1,"bbox":[814,580,360,32]}
+{"kind":"textbox","id":"sh/4b2xkbuh","slide":3,"text":"TROUBLE SHOOTERS  •  SIH 26131","textPreview":"TROUBLE SHOOTERS  •  SIH 26131","textChars":30,"textLines":1,"bbox":[64,676,440,18]}
+{"kind":"textbox","id":"sh/3atwr6tw","slide":3,"text":"CropAI Maharashtra","textPreview":"CropAI Maharashtra","textChars":18,"textLines":1,"bbox":[1010,676,206,18]}
+{"kind":"image","id":"im/zutkvidc","slide":3,"name":"","geometry":"roundRect","alt":"Working CropAI dashboard in dark mode","bbox":[64,184,690,390]}
+{"kind":"notes","id":"nt/qdqoux","slide":3,"text":"Show the live product after this slide.\nEmphasize that unvalidated model outputs fail closed; the system never invents a diagnosis.\n\n[Sources]\nPrototype screenshot: CropAI project, captured 31 Aug 2026."}
+{"kind":"slide","id":"sl/1hlqt9","slide":4,"title":"HOW IT WORKS","textShapes":26}
+{"kind":"textbox","id":"sh/p4f258ny","slide":4,"text":"HOW IT WORKS","textPreview":"HOW IT WORKS","textChars":12,"textLines":1,"bbox":[64,38,700,24]}
+{"kind":"textbox","id":"sh/214jaton","slide":4,"text":"Five checks turn a photo into a safer farm decision","textPreview":"Five checks turn a photo into a safer farm decision","textChars":51,"textLines":1,"bbox":[64,72,1110,66]}
+{"kind":"textbox","id":"sh/32xk3y58","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,42,40,24]}
+{"kind":"shape","id":"sh/gfm18j6h","slide":4,"bbox":[64,146,1152,2]}
+{"kind":"shape","id":"sh/10v21on2","slide":4,"bbox":[64,216,202,214]}
+{"kind":"textbox","id":"sh/ed4j6tob","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[82,234,42,42]}
+{"kind":"textbox","id":"sh/fedkzy5w","slide":4,"text":"CAPTURE","textPreview":"CAPTURE","textChars":7,"textLines":1,"bbox":[82,298,166,30]}
+{"kind":"textbox","id":"sh/0vqlkn6l","slide":4,"text":"2–3 guided views","textPreview":"2–3 guided views","textChars":16,"textLines":1,"bbox":[82,344,166,52]}
+{"kind":"textbox","id":"sh/lwz2dsn6","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[266,292,30,48]}
+{"kind":"shape","id":"sh/lov698b6","slide":4,"bbox":[296,216,202,214]}
+{"kind":"textbox","id":"sh/kn25g3ul","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[314,234,42,42]}
+{"kind":"textbox","id":"sh/jmto7yt0","slide":4,"text":"CONTEXT","textPreview":"CONTEXT","textChars":7,"textLines":1,"bbox":[314,298,166,30]}
+{"kind":"textbox","id":"sh/ylknetcf","slide":4,"text":"Farm + crop + symptoms","textPreview":"Farm + crop + symptoms","textChars":22,"textLines":1,"bbox":[314,344,166,52]}
+{"kind":"textbox","id":"sh/xkb65oba","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[498,292,30,48]}
+{"kind":"shape","id":"sh/cj25c3up","slide":4,"bbox":[528,216,202,214]}
+{"kind":"textbox","id":"sh/bito3yt4","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[546,234,42,42]}
+{"kind":"textbox","id":"sh/ahknatcj","slide":4,"text":"VERIFY","textPreview":"VERIFY","textChars":6,"textLines":1,"bbox":[546,298,166,30]}
+{"kind":"textbox","id":"sh/hgf6hsbe","slide":4,"text":"Quality + scope checks","textPreview":"Quality + scope checks","textChars":22,"textLines":1,"bbox":[546,344,166,52]}
+{"kind":"textbox","id":"sh/gf6ponut","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[730,292,30,48]}
+{"kind":"shape","id":"sh/gjepkri5","slide":4,"bbox":[760,216,202,214]}
+{"kind":"textbox","id":"sh/1knqdwjq","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[778,234,42,42]}
+{"kind":"textbox","id":"sh/exc7i10z","slide":4,"text":"DECIDE","textPreview":"DECIDE","textChars":6,"textLines":1,"bbox":[778,298,166,30]}
+{"kind":"textbox","id":"sh/fil8bm1k","slide":4,"text":"Diagnosis or safe refusal","textPreview":"Diagnosis or safe refusal","textChars":25,"textLines":1,"bbox":[778,344,166,52]}
+{"kind":"textbox","id":"sh/svupgr2t","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[962,292,30,48]}
+{"kind":"shape","id":"sh/tw3q9wje","slide":4,"bbox":[992,216,202,214]}
+{"kind":"textbox","id":"sh/6tc7ehk3","slide":4,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1010,234,42,42]}
+{"kind":"textbox","id":"sh/rul87m18","slide":4,"text":"ACT","textPreview":"ACT","textChars":3,"textLines":1,"bbox":[1010,298,166,30]}
+{"kind":"textbox","id":"sh/4rapc72x","slide":4,"text":"IPM guidance or expert","textPreview":"IPM guidance or expert","textChars":22,"textLines":1,"bbox":[1010,344,166,52]}
+{"kind":"shape","id":"sh/5s3q5cji","slide":4,"bbox":[112,492,1056,104]}
+{"kind":"textbox","id":"sh/7m18v2l4","slide":4,"text":"Every uncertain case becomes useful evidence","textPreview":"Every uncertain case becomes useful evidence","textChars":44,"textLines":1,"bbox":[144,510,450,32]}
+{"kind":"textbox","id":"sh/mlsrmx4j","slide":4,"text":"Expert corrections improve the dataset; privacy-thresholded signals reveal emerging taluka-level outbreaks.","textPreview":"Expert corrections improve the dataset; privacy-thresholded signals reveal emerging taluka-level outbreaks.","textChars":107,"textLines":1,"bbox":[144,548,946,32]}
+{"kind":"textbox","id":"sh/9ojqxc3a","slide":4,"text":"TROUBLE SHOOTERS  •  SIH 26131","textPreview":"TROUBLE SHOOTERS  •  SIH 26131","textChars":30,"textLines":1,"bbox":[64,676,440,18]}
+{"kind":"textbox","id":"sh/8na9o7mp","slide":4,"text":"CropAI Maharashtra","textPreview":"CropAI Maharashtra","textChars":18,"textLines":1,"bbox":[1010,676,206,18]}
+{"kind":"notes","id":"nt/1hlqt9","slide":4,"text":"Walk left to right. The differentiator is the confidence gate between verification and action.\nExplain that expert corrections create a governed learning loop.\n\n[Sources]\nCropAI repository architecture and implemented scan workflow."}
+{"kind":"slide","id":"sl/58ba5y","slide":5,"title":"WHY CROPAI","textShapes":34}
+{"kind":"textbox","id":"sh/sfe9kjet","slide":5,"text":"WHY CROPAI","textPreview":"WHY CROPAI","textChars":10,"textLines":1,"bbox":[64,38,700,24]}
+{"kind":"textbox","id":"sh/ru58red8","slide":5,"text":"We combine capabilities that existing tools leave disconnected","textPreview":"We combine capabilities that existing tools leave disconnected","textChars":62,"textLines":1,"bbox":[64,72,1110,66]}
+{"kind":"textbox","id":"sh/qtwri9wn","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,42,40,24]}
+{"kind":"shape","id":"sh/1k7qxovq","slide":5,"bbox":[64,146,1152,2]}
+{"kind":"shape","id":"sh/0je9oje5","slide":5,"bbox":[64,182,300,48]}
+{"kind":"textbox","id":"sh/fi58vedk","slide":5,"text":"Capability","textPreview":"Capability","textChars":10,"textLines":1,"bbox":[78,190,272,30]}
+{"kind":"shape","id":"sh/ehwrmtwz","slide":5,"bbox":[380,182,254,48]}
+{"kind":"textbox","id":"sh/ho3ql4f6","slide":5,"text":"Plantix / Nuru","textPreview":"Plantix / Nuru","textChars":14,"textLines":1,"bbox":[394,190,226,30]}
+{"kind":"shape","id":"sh/gnupczel","slide":5,"bbox":[650,182,244,48]}
+{"kind":"textbox","id":"sh/m1s3y5or","slide":5,"text":"NPSS","textPreview":"NPSS","textChars":4,"textLines":1,"bbox":[664,190,216,30]}
+{"kind":"shape","id":"sh/72l47apc","slide":5,"bbox":[910,182,306,48]}
+{"kind":"textbox","id":"sh/83ul0f6x","slide":5,"text":"CropAI","textPreview":"CropAI","textChars":6,"textLines":1,"bbox":[924,190,278,30]}
+{"kind":"shape","id":"sh/943m9k7i","slide":5,"bbox":[64,238,300,57]}
+{"kind":"textbox","id":"sh/upc32po3","slide":5,"text":"Field image diagnosis","textPreview":"Field image diagnosis","textChars":21,"textLines":1,"bbox":[78,246,272,41]}
+{"kind":"shape","id":"sh/vql4bup8","slide":5,"bbox":[380,238,254,57]}
+{"kind":"textbox","id":"sh/wrul4z6t","slide":5,"text":"Strong","textPreview":"Strong","textChars":6,"textLines":1,"bbox":[394,246,226,41]}
+{"kind":"shape","id":"sh/hs3md47e","slide":5,"bbox":[650,238,244,57]}
+{"kind":"textbox","id":"sh/itw36poz","slide":5,"text":"Strong","textPreview":"Strong","textChars":6,"textLines":1,"bbox":[664,246,216,41]}
+{"kind":"shape","id":"sh/ju54fupk","slide":5,"bbox":[910,238,306,57]}
+{"kind":"textbox","id":"sh/fy5k3uls","slide":5,"text":"Guided multi-view","textPreview":"Guided multi-view","textChars":17,"textLines":1,"bbox":[924,246,278,41]}
+{"kind":"shape","id":"sh/exw3u947","slide":5,"bbox":[64,299,300,57]}
+{"kind":"textbox","id":"sh/1072543i","slide":5,"text":"Works in low connectivity","textPreview":"Works in low connectivity","textChars":25,"textLines":1,"bbox":[78,307,272,41]}
+{"kind":"shape","id":"sh/gzelwzmx","slide":5,"bbox":[380,299,254,57]}
+{"kind":"textbox","id":"sh/ru5kzulg","slide":5,"text":"Nuru: offline","textPreview":"Nuru: offline","textChars":13,"textLines":1,"bbox":[394,307,226,41]}
+{"kind":"shape","id":"sh/6tw3qp4v","slide":5,"bbox":[650,299,244,57]}
+{"kind":"textbox","id":"sh/twn2143m","slide":5,"text":"Limited evidence","textPreview":"Limited evidence","textChars":16,"textLines":1,"bbox":[664,307,216,41]}
+{"kind":"shape","id":"sh/svelszm1","slide":5,"bbox":[910,299,306,57]}
+{"kind":"textbox","id":"sh/j6lkvalk","slide":5,"text":"Offline drafts + sync","textPreview":"Offline drafts + sync","textChars":21,"textLines":1,"bbox":[924,307,278,41]}
+{"kind":"shape","id":"sh/i5c3mp4z","slide":5,"bbox":[64,360,300,57]}
+{"kind":"textbox","id":"sh/8zq9gryl","slide":5,"text":"Local farmer experience","textPreview":"Local farmer experience","textChars":23,"textLines":1,"bbox":[78,368,272,41]}
+{"kind":"shape","id":"sh/90zq9wf6","slide":5,"bbox":[380,360,254,57]}
+{"kind":"textbox","id":"sh/mx8rehgf","slide":5,"text":"Multilingual","textPreview":"Multilingual","textChars":12,"textLines":1,"bbox":[394,368,226,41]}
+{"kind":"shape","id":"sh/nyh87mx0","slide":5,"bbox":[650,360,244,57]}
+{"kind":"textbox","id":"sh/wnq9kryh","slide":5,"text":"National app","textPreview":"National app","textChars":12,"textLines":1,"bbox":[664,368,216,41]}
+{"kind":"shape","id":"sh/xojadwf2","slide":5,"bbox":[910,360,306,57]}
+{"kind":"textbox","id":"sh/al8ri1gr","slide":5,"text":"Marathi voice-first","textPreview":"Marathi voice-first","textChars":19,"textLines":1,"bbox":[924,368,278,41]}
+{"kind":"shape","id":"sh/vmh8b6xw","slide":5,"bbox":[64,421,300,57]}
+{"kind":"textbox","id":"sh/cr6987yd","slide":5,"text":"Uncertainty handling","textPreview":"Uncertainty handling","textChars":20,"textLines":1,"bbox":[78,429,272,41]}
+{"kind":"shape","id":"sh/dsfq1cfy","slide":5,"bbox":[380,421,254,57]}
+{"kind":"textbox","id":"sh/50baxwje","slide":5,"text":"Varies","textPreview":"Varies","textChars":6,"textLines":1,"bbox":[394,429,226,41]}
+{"kind":"shape","id":"sh/4z294r2t","slide":5,"bbox":[650,421,244,57]}
+{"kind":"textbox","id":"sh/3ytsvm18","slide":5,"text":"Advisory workflow","textPreview":"Advisory workflow","textChars":17,"textLines":1,"bbox":[664,429,216,41]}
+{"kind":"shape","id":"sh/ix0r21kn","slide":5,"bbox":[910,421,306,57]}
+{"kind":"textbox","id":"sh/hwratwji","slide":5,"text":"Fail-safe abstention","textPreview":"Fail-safe abstention","textChars":20,"textLines":1,"bbox":[924,429,278,41]}
+{"kind":"shape","id":"sh/gvi90r2x","slide":5,"bbox":[64,482,300,57]}
+{"kind":"textbox","id":"sh/vu98rm1c","slide":5,"text":"Expert correction loop","textPreview":"Expert correction loop","textChars":22,"textLines":1,"bbox":[78,490,272,41]}
+{"kind":"shape","id":"sh/ut0ryhkr","slide":5,"bbox":[380,482,254,57]}
+{"kind":"textbox","id":"sh/t8rqpc36","slide":5,"text":"Available","textPreview":"Available","textChars":9,"textLines":1,"bbox":[394,490,226,41]}
+{"kind":"shape","id":"sh/87i9w72l","slide":5,"bbox":[650,482,244,57]}
+{"kind":"textbox","id":"sh/ydw7qd0j","slide":5,"text":"Government network","textPreview":"Government network","textChars":18,"textLines":1,"bbox":[664,490,216,41]}
+{"kind":"shape","id":"sh/ze5ozih4","slide":5,"bbox":[910,482,306,57]}
+{"kind":"textbox","id":"sh/kzypsnip","slide":5,"text":"Built into each case","textPreview":"Built into each case","textChars":20,"textLines":1,"bbox":[924,490,278,41]}
+{"kind":"shape","id":"sh/l0761sza","slide":5,"bbox":[64,543,300,57]}
+{"kind":"textbox","id":"sh/a9w7md0n","slide":5,"text":"Privacy-aware outbreaks","textPreview":"Privacy-aware outbreaks","textChars":23,"textLines":1,"bbox":[78,551,272,41]}
+{"kind":"shape","id":"sh/ba5ovi1s","slide":5,"bbox":[380,543,254,57]}
+{"kind":"textbox","id":"sh/cbepo3id","slide":5,"text":"Commercial signals","textPreview":"Commercial signals","textChars":18,"textLines":1,"bbox":[394,551,226,41]}
+{"kind":"shape","id":"sh/xcn6x8zy","slide":5,"bbox":[650,543,244,57]}
+{"kind":"textbox","id":"sh/25cnit0b","slide":5,"text":"National surveillance","textPreview":"National surveillance","textChars":21,"textLines":1,"bbox":[664,551,216,41]}
+{"kind":"shape","id":"sh/n6lory1w","slide":5,"bbox":[910,543,306,57]}
+{"kind":"textbox","id":"sh/ryhc3atc","slide":5,"text":"Taluka thresholding","textPreview":"Taluka thresholding","textChars":19,"textLines":1,"bbox":[924,551,278,41]}
+{"kind":"textbox","id":"sh/6d8va5cr","slide":5,"text":"Positioning: trusted Maharashtra crop-care workflow—not another generic classifier.","textPreview":"Positioning: trusted Maharashtra crop-care workflow—not another generic classifier.","textChars":83,"textLines":1,"bbox":[64,624,1110,32]}
+{"kind":"textbox","id":"sh/t0zu50bi","slide":5,"text":"TROUBLE SHOOTERS  •  SIH 26131","textPreview":"TROUBLE SHOOTERS  •  SIH 26131","textChars":30,"textLines":1,"bbox":[64,676,440,18]}
+{"kind":"textbox","id":"sh/szqdcvux","slide":5,"text":"CropAI Maharashtra","textPreview":"CropAI Maharashtra","textChars":18,"textLines":1,"bbox":[1010,676,206,18]}
+{"kind":"notes","id":"nt/58ba5y","slide":5,"text":"Do not attack competitors; show the integration gap CropAI addresses.\n\n[Sources]\nPlantix official features: https://plantix.net/en/download/\nPlantVillage Nuru / CGIAR: https://bigdata.cgiar.org/inspire/inspire-challenge-2017/pest-and-disease-monitoring-by-using-artificial-intelligence/\nNPSS, Press Information Bureau, 25 Mar 2025: https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2114896&lang=2&reg=48"}
+{"kind":"slide","id":"sl/vcbuoz","slide":6,"title":"FEASIBILITY","textShapes":32}
+{"kind":"textbox","id":"sh/r6pg3epw","slide":6,"text":"FEASIBILITY","textPreview":"FEASIBILITY","textChars":11,"textLines":1,"bbox":[64,38,700,24]}
+{"kind":"textbox","id":"sh/s7yhcjqh","slide":6,"text":"The prototype is deployable; model release remains evidence-gated","textPreview":"The prototype is deployable; model release remains evidence-gated","textChars":65,"textLines":1,"bbox":[64,72,1110,66]}
+{"kind":"textbox","id":"sh/t87y5o72","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,42,40,24]}
+{"kind":"shape","id":"sh/e9gzet8n","slide":6,"bbox":[64,146,1152,2]}
+{"kind":"textbox","id":"sh/fapg7yp8","slide":6,"text":"BUILT NOW","textPreview":"BUILT NOW","textChars":9,"textLines":1,"bbox":[64,184,300,28]}
+{"kind":"textbox","id":"sh/gbihg3qt","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[70,230,20,24]}
+{"kind":"textbox","id":"sh/1cri987y","slide":6,"text":"React installable PWA","textPreview":"React installable PWA","textChars":21,"textLines":1,"bbox":[100,226,330,30]}
+{"kind":"textbox","id":"sh/2d0zid8j","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[70,278,20,24]}
+{"kind":"textbox","id":"sh/3e90byp4","slide":6,"text":"Firebase Auth + verified users","textPreview":"Firebase Auth + verified users","textChars":30,"textLines":1,"bbox":[100,274,330,30]}
+{"kind":"textbox","id":"sh/nm9czy1c","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[70,326,20,24]}
+{"kind":"textbox","id":"sh/ml0v6t0r","slide":6,"text":"Firestore tenant isolation","textPreview":"Firestore tenant isolation","textChars":26,"textLines":1,"bbox":[100,322,330,30]}
+{"kind":"textbox","id":"sh/9oru18ji","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[70,374,20,24]}
+{"kind":"textbox","id":"sh/8nid83ix","slide":6,"text":"Private image quarantine","textPreview":"Private image quarantine","textChars":24,"textLines":1,"bbox":[100,370,330,30]}
+{"kind":"textbox","id":"sh/zy9cvy10","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[70,422,20,24]}
+{"kind":"textbox","id":"sh/exgv2t0v","slide":6,"text":"Cloud Functions scan lifecycle","textPreview":"Cloud Functions scan lifecycle","textChars":30,"textLines":1,"bbox":[100,418,330,30]}
+{"kind":"textbox","id":"sh/1kruxoj6","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[70,470,20,24]}
+{"kind":"textbox","id":"sh/0jid43il","slide":6,"text":"Expert/admin role workflows","textPreview":"Expert/admin role workflows","textChars":27,"textLines":1,"bbox":[100,466,330,30]}
+{"kind":"textbox","id":"sh/jetc7i1k","slide":6,"text":"CONTROLLED RELEASE","textPreview":"CONTROLLED RELEASE","textChars":18,"textLines":1,"bbox":[478,184,330,28]}
+{"kind":"textbox","id":"sh/itkved0z","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[484,230,20,24]}
+{"kind":"textbox","id":"sh/u9of6hk7","slide":6,"text":"Six Maharashtra-priority crop models","textPreview":"Six Maharashtra-priority crop models","textChars":36,"textLines":1,"bbox":[514,226,320,40]}
+{"kind":"textbox","id":"sh/faxgfmls","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[484,284,20,24]}
+{"kind":"textbox","id":"sh/gb6x8r2d","slide":6,"text":"Independent field-set validation","textPreview":"Independent field-set validation","textChars":32,"textLines":1,"bbox":[514,280,320,40]}
+{"kind":"textbox","id":"sh/hcfyhw3y","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[484,338,20,24]}
+{"kind":"textbox","id":"sh/2dofa1k3","slide":6,"text":"Per-class recall & macro-F1 gates","textPreview":"Per-class recall & macro-F1 gates","textChars":33,"textLines":1,"bbox":[514,334,320,40]}
+{"kind":"textbox","id":"sh/3exgj6lo","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[484,392,20,24]}
+{"kind":"textbox","id":"sh/4f6xcb29","slide":6,"text":"Unknown / out-of-scope detection","textPreview":"Unknown / out-of-scope detection","textChars":32,"textLines":1,"bbox":[514,388,320,40]}
+{"kind":"textbox","id":"sh/pgzylw3u","slide":6,"text":"●","textPreview":"●","textChars":1,"textLines":1,"bbox":[484,446,20,24]}
+{"kind":"textbox","id":"sh/ih4fyxkz","slide":6,"text":"Model + dataset checksums","textPreview":"Model + dataset checksums","textChars":25,"textLines":1,"bbox":[514,442,320,40]}
+{"kind":"shape","id":"sh/jidw72lk","slide":6,"bbox":[872,184,344,390]}
+{"kind":"textbox","id":"sh/lo3at4re","slide":6,"text":"TECH STACK","textPreview":"TECH STACK","textChars":10,"textLines":1,"bbox":[902,214,284,28]}
+{"kind":"textbox","id":"sh/0nu90zqt","slide":6,"text":"Vite + React\nFirebase Auth / Firestore\nCloud Storage + Functions\nPrivate Cloud Run inference\nONNX model packages\nFCM alerts + PWA offline","textPreview":"Vite + React | Firebase Auth / Firestore | Cloud Storage + Functions | Private Cloud Run inference | ONNX model packages | FCM alerts + P...","textChars":137,"textLines":6,"bbox":[902,260,282,240]}
+{"kind":"textbox","id":"sh/zmlsru98","slide":6,"text":"Security rules: 11 / 11 tests passed","textPreview":"Security rules: 11 / 11 tests passed","textChars":36,"textLines":1,"bbox":[902,520,282,28]}
+{"kind":"textbox","id":"sh/ylcryp8n","slide":6,"text":"TROUBLE SHOOTERS  •  SIH 26131","textPreview":"TROUBLE SHOOTERS  •  SIH 26131","textChars":30,"textLines":1,"bbox":[64,676,440,18]}
+{"kind":"textbox","id":"sh/9cnax4ra","slide":6,"text":"CropAI Maharashtra","textPreview":"CropAI Maharashtra","textChars":18,"textLines":1,"bbox":[1010,676,206,18]}
+{"kind":"notes","id":"nt/vcbuoz","slide":6,"text":"Be transparent: the platform is working, while disease models must pass field validation before release.\nThis honesty is a safety and feasibility strength, not a weakness.\n\n[Sources]\nCropAI repository README and verified local build/security test results."}
+{"kind":"slide","id":"sl/n1bvfz","slide":7,"title":"THE OUTCOME","textShapes":12}
+{"kind":"textbox","id":"sh/t8zuhgni","slide":7,"text":"THE OUTCOME","textPreview":"THE OUTCOME","textChars":11,"textLines":1,"bbox":[64,46,400,24]}
+{"kind":"textbox","id":"sh/65obml4r","slide":7,"text":"Earlier action. Safer advice.\nStronger extension reach.","textPreview":"Earlier action. Safer advice. | Stronger extension reach.","textChars":55,"textLines":2,"bbox":[64,82,780,112]}
+{"kind":"shape","id":"sh/76xsf65c","slide":7,"bbox":[64,260,350,156]}
+{"kind":"textbox","id":"sh/k36tkbml","slide":7,"text":"FARMER","textPreview":"FARMER","textChars":6,"textLines":1,"bbox":[88,282,300,26]}
+{"kind":"textbox","id":"sh/l4fadgn6","slide":7,"text":"Understands what to do next in their language","textPreview":"Understands what to do next in their language","textChars":45,"textLines":1,"bbox":[88,326,300,64]}
+{"kind":"shape","id":"sh/y1obi14v","slide":7,"bbox":[448,260,350,156]}
+{"kind":"textbox","id":"sh/j2xsb65g","slide":7,"text":"EXPERT","textPreview":"EXPERT","textChars":6,"textLines":1,"bbox":[472,282,300,26]}
+{"kind":"textbox","id":"sh/wfmtgr6p","slide":7,"text":"Prioritizes uncertain and high-risk cases","textPreview":"Prioritizes uncertain and high-risk cases","textChars":41,"textLines":1,"bbox":[472,326,300,64]}
+{"kind":"shape","id":"sh/x0fa9wna","slide":7,"bbox":[832,260,350,156]}
+{"kind":"textbox","id":"sh/tkz2lkvi","slide":7,"text":"GOVERNMENT","textPreview":"GOVERNMENT","textChars":10,"textLines":1,"bbox":[856,282,300,26]}
+{"kind":"textbox","id":"sh/sjq1sfex","slide":7,"text":"Sees privacy-safe emerging outbreak signals","textPreview":"Sees privacy-safe emerging outbreak signals","textChars":43,"textLines":1,"bbox":[856,326,300,64]}
+{"kind":"textbox","id":"sh/rih0jadc","slide":7,"text":"90-DAY PILOT","textPreview":"90-DAY PILOT","textChars":12,"textLines":1,"bbox":[64,476,190,26]}
+{"kind":"textbox","id":"sh/6h8jq5wr","slide":7,"text":"1 district  →  6 priority crops  →  KVK expert validation  →  measurable follow-up outcomes","textPreview":"1 district  →  6 priority crops  →  KVK expert validation  →  measurable follow-up outcomes","textChars":91,"textLines":1,"bbox":[64,514,1100,52]}
+{"kind":"shape","id":"sh/5gzih0v6","slide":7,"bbox":[64,606,1152,2]}
+{"kind":"textbox","id":"sh/4fq1ovel","slide":7,"text":"Trouble Shooters","textPreview":"Trouble Shooters","textChars":16,"textLines":1,"bbox":[64,626,340,30]}
+{"kind":"textbox","id":"sh/jeh0fad0","slide":7,"text":"Let Maharashtra farmers act before damage spreads.","textPreview":"Let Maharashtra farmers act before damage spreads.","textChars":50,"textLines":1,"bbox":[520,622,696,38]}
+{"kind":"notes","id":"nt/n1bvfz","slide":7,"text":"Close by asking for a district pilot and access to agricultural experts/field images.\nSuggested pilot metrics: image completion rate, expert turnaround, safe-refusal rate, and farmer-reported recovery.\n\n[Sources]\nSIH evaluation criteria: novelty, feasibility, practicability, sustainability, impact, UX and future progression — https://sih.gov.in/letters/Guidelines-College-SPOC.pdf"}

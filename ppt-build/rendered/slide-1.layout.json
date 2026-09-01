@@ -1,0 +1,538 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ed011s",
+    "id": "ed011s",
+    "slide": 1,
+    "layoutId": "46615d26-fc21-4f2a-85d6-0b80540a66d4",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2fc7a637-8ff4-48c5-8631-797490b5b282",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#173D2B",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "46615d26-fc21-4f2a-85d6-0b80540a66d4",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2fc7a637-8ff4-48c5-8631-797490b5b282",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2fc7a637-8ff4-48c5-8631-797490b5b282",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0vi5or6t",
+      "id": "1",
+      "bbox": [
+        72,
+        54,
+        560,
+        28
+      ],
+      "geometry": "rect",
+      "text": "SMART INDIA HACKATHON",
+      "textPreview": "SMART INDIA HACKATHON",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#79C98B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SMART INDIA HACKATHON"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SMART INDIA HACKATHON",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SMART INDIA HACKATHON",
+              "fontSize": 15,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zu94v658",
+      "id": "2",
+      "bbox": [
+        72,
+        164,
+        560,
+        92
+      ],
+      "geometry": "rect",
+      "text": "CropAI",
+      "textPreview": "CropAI",
+      "resolvedFontSize": 72,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 72,
+        "typeface": "+mn-lt",
+        "color": "#F6F2E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CropAI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CropAI",
+          "resolvedTextStyle": {
+            "fontSize": 72,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CropAI",
+              "fontSize": 72,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e90nm1on",
+      "id": "3",
+      "bbox": [
+        72,
+        260,
+        640,
+        112
+      ],
+      "geometry": "rect",
+      "text": "Detect earlier. Act safely.\nEscalate intelligently.",
+      "textPreview": "Detect earlier. Act safely. | Escalate intelligently.",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 34,
+        "typeface": "+mn-lt",
+        "color": "#F6F2E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Detect earlier. Act safely."
+          },
+          {
+            "index": 2,
+            "text": "Escalate intelligently."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Detect earlier. Act safely.",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Detect earlier. Act safely.",
+              "fontSize": 34,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Escalate intelligently.",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "color": "#F6F2E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Escalate intelligently.",
+              "fontSize": 34,
+              "color": "#F6F2E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d8rmtwni",
+      "id": "4",
+      "bbox": [
+        72,
+        410,
+        520,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#79C98B",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c7i5kr6x",
+      "id": "5",
+      "bbox": [
+        72,
+        438,
+        680,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Early detection and management of crop diseases and pest infestations",
+      "textPreview": "Early detection and management of crop diseases and pest infestations",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#DDE9E1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Early detection and management of crop diseases and pest infestations"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Early detection and management of crop diseases and pest infestations",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#DDE9E1",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Early detection and management of crop diseases and pest infestations",
+              "fontSize": 22,
+              "color": "#DDE9E1",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r6p4rm5c",
+      "id": "6",
+      "bbox": [
+        72,
+        548,
+        780,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Problem Statement 26131  |  Software\nGovernment of Maharashtra  |  Agriculture, FoodTech & Rural Development",
+      "textPreview": "Problem Statement 26131  |  Software | Government of Maharashtra  |  Agriculture, FoodTech & Rural Development",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#BBD0C2",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Problem Statement 26131  |  Software"
+          },
+          {
+            "index": 2,
+            "text": "Government of Maharashtra  |  Agriculture, FoodTech & Rural Development"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Problem Statement 26131  |  Software",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#BBD0C2",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Problem Statement 26131  |  Software",
+              "fontSize": 16,
+              "color": "#BBD0C2",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Government of Maharashtra  |  Agriculture, FoodTech & Rural Development",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#BBD0C2",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Government of Maharashtra  |  Agriculture, FoodTech & Rural Development",
+              "fontSize": 16,
+              "color": "#BBD0C2",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q5g3ihor",
+      "id": "7",
+      "bbox": [
+        990,
+        526,
+        218,
+        82
+      ],
+      "geometry": "rect",
+      "text": "TROUBLE\nSHOOTERS",
+      "textPreview": "TROUBLE | SHOOTERS",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#79C98B",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TROUBLE"
+          },
+          {
+            "index": 2,
+            "text": "SHOOTERS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TROUBLE",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TROUBLE",
+              "fontSize": 23,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "SHOOTERS",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#79C98B",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SHOOTERS",
+              "fontSize": 23,
+              "color": "#79C98B",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
